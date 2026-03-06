@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAREERDLE – Guess the Job</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500;700&family=Libre+Franklin:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#0b0c10;--surface:#13151b;--surface2:#1c1f28;--border:#2a2d3a;
+    --text:#e2e4ed;--muted:#5a5f72;
+    --green-bg:#0e2e1a;--green-bd:#1a5c30;--green-tx:#4ade80;
+    --yellow-bg:#2a2100;--yellow-bd:#5a4500;--yellow-tx:#fbbf24;
+    --red-bg:#2e0e0e;--red-bd:#5c1a1a;--red-tx:#f87171;
+    --accent:#7c6eff;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:'Libre Franklin',sans-serif;min-height:100vh;overflow-x:hidden}
+  body::after{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 60% 40% at 15% 0%,rgba(124,110,255,0.06) 0%,transparent 60%),radial-gradient(ellipse 50% 30% at 90% 100%,rgba(74,222,128,0.04) 0%,transparent 60%);pointer-events:none;z-index:0}
+
+  header{position:relative;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:1rem 1.8rem;border-bottom:1px solid var(--border);background:rgba(11,12,16,0.95);backdrop-filter:blur(12px)}
+  .logo{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:0.08em}
+  .logo em{color:var(--accent);font-style:normal}
+  .logo-sub{font-family:'IBM Plex Mono',monospace;font-size:0.58rem;color:var(--muted);letter-spacing:0.18em;text-transform:uppercase;margin-top:-4px}
+  .hdr-right{display:flex;gap:0.6rem;align-items:center}
+  .pill-btn{background:var(--surface2);border:1px solid var(--border);color:var(--muted);padding:.35rem .9rem;border-radius:3px;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:.72rem;transition:all .15s;letter-spacing:.05em}
+  .pill-btn:hover{border-color:var(--accent);color:var(--accent)}
+
+  main{position:relative;z-index:1;max-width:860px;margin:0 auto;padding:1.8rem 1.2rem 3rem}
+
+  .howto{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.4rem;margin-bottom:1.6rem;display:none;animation:fadeIn .2s ease}
+  .howto.open{display:block}
+  .howto h3{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:.1em;color:var(--accent);margin-bottom:.9rem}
+  .howto-grid{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+  .howto-item{display:flex;gap:.6rem;align-items:flex-start;font-size:.8rem;color:var(--muted);line-height:1.5}
+  .color-legend{display:flex;gap:1rem;margin-top:1rem;padding-top:.9rem;border-top:1px solid var(--border);flex-wrap:wrap}
+  .legend-item{display:flex;align-items:center;gap:.4rem;font-size:.75rem;font-family:'IBM Plex Mono',monospace}
+  .ldot{width:12px;height:12px;border-radius:2px;flex-shrink:0}
+
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:1.6rem;box-shadow:0 24px 64px rgba(0,0,0,.5)}
+  .card-top{display:flex;align-items:center;justify-content:space-between;padding:.9rem 1.2rem;background:var(--surface2);border-bottom:1px solid var(--border)}
+  .card-label{font-family:'IBM Plex Mono',monospace;font-size:.65rem;color:var(--muted);letter-spacing:.15em;text-transform:uppercase}
+  .counter{font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--accent);letter-spacing:.05em}
+
+  .tile-grid{display:grid;grid-template-columns:1.9fr 1.2fr 1fr;grid-template-rows:1fr 1fr;gap:3px;padding:3px;background:var(--bg);min-height:250px}
+  .tile{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.2rem .8rem;text-align:center;border-radius:4px;position:relative;overflow:hidden;transition:filter .15s;cursor:default}
+  .tile:hover{filter:brightness(1.12)}
+  .tile.span2{grid-row:span 2}
+  .tile.green{background:var(--green-bg);border:1px solid var(--green-bd)}
+  .tile.yellow{background:var(--yellow-bg);border:1px solid var(--yellow-bd)}
+  .tile.red{background:var(--red-bg);border:1px solid var(--red-bd)}
+  .tile-icon{font-size:1.5rem;margin-bottom:.4rem;opacity:.85}
+  .tile.span2 .tile-icon{font-size:2.2rem}
+  .tile-name{font-family:'IBM Plex Mono',monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.35rem;opacity:.65}
+  .tile.green .tile-name{color:var(--green-tx)}
+  .tile.yellow .tile-name{color:var(--yellow-tx)}
+  .tile.red .tile-name{color:var(--red-tx)}
+  .tile-val{font-family:'Bebas Neue',sans-serif;letter-spacing:.04em;line-height:1.15}
+  .tile.span2 .tile-val{font-size:2rem}
+  .tile:not(.span2) .tile-val{font-size:1.1rem}
+  .tile.green .tile-val{color:var(--green-tx)}
+  .tile.yellow .tile-val{color:var(--yellow-tx)}
+  .tile.red .tile-val{color:var(--red-tx)}
+  .tile-sub{font-size:.65rem;font-family:'Libre Franklin',sans-serif;opacity:.55;margin-top:.25rem;line-height:1.3}
+  .tile.green .tile-sub{color:var(--green-tx)}
+  .tile.yellow .tile-sub{color:var(--yellow-tx)}
+  .tile.red .tile-sub{color:var(--red-tx)}
+  .tile::before{content:'';position:absolute;top:0;left:0;width:3px;height:3px;border-radius:0 0 3px 0}
+  .tile.green::before{background:var(--green-tx)}
+  .tile.yellow::before{background:var(--yellow-tx)}
+  .tile.red::before{background:var(--red-tx)}
+
+  .card-bottom{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;padding:.9rem 1.1rem;border-top:1px solid var(--border);background:var(--surface2)}
+  .mini-pill{font-family:'IBM Plex Mono',monospace;font-size:.65rem;padding:.25rem .65rem;border-radius:3px;letter-spacing:.05em;background:var(--surface);border:1px solid var(--border);color:var(--muted)}
+  .mini-pill span{color:var(--text)}
+
+  .dot-row{display:flex;gap:.5rem;justify-content:center;margin-bottom:1.4rem}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--border);transition:all .3s}
+  .dot.used{background:var(--muted)}
+  .dot.win{background:var(--green-tx);box-shadow:0 0 6px var(--green-tx)}
+  .dot.lose{background:var(--red-tx)}
+
+  .guesses-wrap{margin-bottom:1.2rem}
+  .guess-row{display:grid;grid-template-columns:1fr 120px 80px;gap:.6rem;align-items:center;padding:.65rem 1rem;border-radius:6px;margin-bottom:.35rem;border:1px solid var(--border);animation:slideDown .25s cubic-bezier(.22,1,.36,1)}
+  @keyframes slideDown{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+  .guess-row.correct{background:rgba(74,222,128,.07);border-color:var(--green-bd)}
+  .guess-row.close{background:rgba(251,191,36,.06);border-color:var(--yellow-bd)}
+  .guess-row.wrong{background:rgba(248,113,113,.05);border-color:var(--red-bd)}
+  .guess-name{font-family:'IBM Plex Mono',monospace;font-size:.82rem;letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .guess-row.correct .guess-name{color:var(--green-tx)}
+  .guess-row.close .guess-name{color:var(--yellow-tx)}
+  .guess-row.wrong .guess-name{color:var(--red-tx)}
+  .bar-wrap{height:5px;border-radius:99px;background:var(--border);overflow:hidden}
+  .bar-fill{height:100%;border-radius:99px;transition:width .7s cubic-bezier(.22,1,.36,1);width:0%}
+  .guess-row.correct .bar-fill{background:var(--green-tx)}
+  .guess-row.close .bar-fill{background:var(--yellow-tx)}
+  .guess-row.wrong .bar-fill{background:var(--red-tx)}
+  .guess-pct{font-family:'IBM Plex Mono',monospace;font-size:.72rem;text-align:right}
+  .guess-row.correct .guess-pct{color:var(--green-tx)}
+  .guess-row.close .guess-pct{color:var(--yellow-tx)}
+  .guess-row.wrong .guess-pct{color:var(--red-tx)}
+
+  .input-row{display:flex;gap:.6rem;margin-bottom:.3rem}
+  .job-input{flex:1;background:var(--surface);border:1px solid var(--border);color:var(--text);padding:.8rem 1rem;border-radius:6px;font-family:'IBM Plex Mono',monospace;font-size:.88rem;outline:none;transition:border-color .15s}
+  .job-input:focus{border-color:var(--accent)}
+  .job-input::placeholder{color:var(--muted)}
+  .guess-btn{background:var(--accent);color:#fff;border:none;padding:.8rem 1.6rem;border-radius:6px;font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:.1em;cursor:pointer;transition:all .15s;white-space:nowrap}
+  .guess-btn:hover:not(:disabled){background:#9b8fff;transform:translateY(-1px)}
+  .guess-btn:disabled{opacity:.35;cursor:not-allowed}
+
+  .ac-list{background:var(--surface);border:1px solid var(--border);border-radius:6px;max-height:190px;overflow-y:auto;margin-bottom:1rem;display:none;scrollbar-width:thin;scrollbar-color:var(--border) transparent}
+  .ac-list.open{display:block}
+  .ac-item{padding:.55rem 1rem;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:.78rem;border-bottom:1px solid var(--border);color:var(--muted);transition:all .1s;letter-spacing:.02em}
+  .ac-item:last-child{border-bottom:none}
+  .ac-item:hover,.ac-item.active{background:var(--surface2);color:var(--accent)}
+
+  .overlay{position:fixed;inset:0;background:rgba(0,0,0,.8);backdrop-filter:blur(8px);z-index:200;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s}
+  .overlay.show{opacity:1;pointer-events:all}
+  .modal{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:2.2rem 2rem;max-width:460px;width:92%;text-align:center;transform:scale(.92);transition:transform .3s cubic-bezier(.22,1,.36,1)}
+  .overlay.show .modal{transform:scale(1)}
+  .m-emoji{font-size:3rem;margin-bottom:.8rem}
+  .m-title{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;letter-spacing:.06em;margin-bottom:.3rem}
+  .m-sub{color:var(--muted);font-size:.85rem;margin-bottom:1.4rem}
+  .m-answer{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:1rem 1.2rem;margin-bottom:1.2rem;text-align:left}
+  .m-job{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:.06em;color:var(--accent)}
+  .m-stats{display:grid;grid-template-columns:1fr 1fr;gap:.4rem;margin-top:.7rem}
+  .m-stat{font-family:'IBM Plex Mono',monospace;font-size:.68rem;color:var(--muted)}
+  .m-stat span{color:var(--text)}
+  .m-fact{font-size:.8rem;color:var(--muted);line-height:1.6;margin-bottom:1.3rem;padding:.8rem;background:var(--surface2);border-radius:6px;border:1px solid var(--border);text-align:left}
+  .m-btns{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap}
+  .mbtn{padding:.7rem 1.5rem;border-radius:5px;font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:.08em;cursor:pointer;border:none;transition:all .15s}
+  .mbtn.pri{background:var(--accent);color:#fff}
+  .mbtn.pri:hover{background:#9b8fff}
+  .mbtn.sec{background:var(--surface2);color:var(--text);border:1px solid var(--border)}
+  .mbtn.sec:hover{border-color:var(--accent);color:var(--accent)}
+
+  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  @media(max-width:580px){
+    .tile-grid{grid-template-columns:1fr 1fr;min-height:200px}
+    .tile.span2{grid-row:span 1}
+    .tile.span2 .tile-val{font-size:1.4rem}
+    .tile.span2 .tile-icon{font-size:1.6rem}
+    .howto-grid{grid-template-columns:1fr}
+    .guess-row{grid-template-columns:1fr 65px}
+    .bar-wrap{display:none}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <div class="logo">CAREER<em>DLE</em></div>
+    <div class="logo-sub">Identify the 2025 job from real hiring data</div>
+  </div>
+  <div class="hdr-right">
+    <button class="pill-btn" onclick="toggleHow()">? HOW TO PLAY</button>
+    <button class="pill-btn" onclick="nextPuzzle()">NEXT →</button>
+  </div>
+</header>
+
+<main>
+  <div class="howto" id="howto">
+    <h3>HOW TO PLAY</h3>
+    <div class="howto-grid">
+      <div class="howto-item"><span>📊</span><span>Study the 6 career stat tiles — salary, hiring growth, education required, remote work, stress, and hours. All data is from 2025 US hiring records.</span></div>
+      <div class="howto-item"><span>🔍</span><span>Type a job title and press GUESS. After each guess, see a % similarity score. You have 6 attempts total.</span></div>
+      <div class="howto-item"><span>🎯</span><span>Higher % = your guess shares similar traits with the answer. Use clues to narrow it down!</span></div>
+      <div class="howto-item"><span>🏆</span><span>Identify the secret career before you run out of guesses. A new puzzle releases each day!</span></div>
+    </div>
+    <div class="color-legend">
+      <div class="legend-item"><div class="ldot" style="background:#4ade80"></div>Green = Good / attractive for job seekers</div>
+      <div class="legend-item"><div class="ldot" style="background:#fbbf24"></div>Yellow = Middle ground / moderate</div>
+      <div class="legend-item"><div class="ldot" style="background:#f87171"></div>Red = Challenging / demanding / hard to enter</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <div class="card-label">📋 2025 Career Profile — Identify this job</div>
+      <div class="counter" id="counter">6 GUESSES LEFT</div>
+    </div>
+    <div class="tile-grid" id="tileGrid"></div>
+    <div class="card-bottom" id="cardBottom"></div>
+  </div>
+
+  <div class="dot-row">
+    <div class="dot" id="dot0"></div><div class="dot" id="dot1"></div>
+    <div class="dot" id="dot2"></div><div class="dot" id="dot3"></div>
+    <div class="dot" id="dot4"></div><div class="dot" id="dot5"></div>
+  </div>
+
+  <div class="guesses-wrap" id="guessList"></div>
+
+  <div class="input-row">
+    <input type="text" class="job-input" id="jobInput" placeholder="Type a job title…" autocomplete="off" oninput="onInput(event)" onkeydown="onKey(event)">
+    <button class="guess-btn" id="guessBtn" onclick="makeGuess()">GUESS</button>
+  </div>
+  <div class="ac-list" id="acList"></div>
+</main>
+
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <div class="m-emoji" id="mEmoji">🎉</div>
+    <div class="m-title" id="mTitle">NAILED IT!</div>
+    <div class="m-sub" id="mSub"></div>
+    <div class="m-answer">
+      <div class="m-job" id="mJob"></div>
+      <div class="m-stats" id="mStats"></div>
+    </div>
+    <div class="m-fact" id="mFact"></div>
+    <div class="m-btns">
+      <button class="mbtn pri" onclick="shareScore()">📤 SHARE</button>
+      <button class="mbtn sec" onclick="nextPuzzle()">NEXT PUZZLE →</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── COLOR LOGIC ───────────────────────────────────────────
+function salCol(s){ return s>=130000?'green':s>=75000?'yellow':'red'; }
+function growCol(hired,fired){
+  const r=fired/(hired||1);
+  if(r<0.1&&hired>5000) return 'green';
+  if(r<0.2&&hired>2000) return 'yellow';
+  return 'red';
+}
+function eduCol(e){
+  const g=['None','HS Diploma','Certification','Apprenticeship','Associate'];
+  const y=["Bachelor's"];
+  return g.includes(e)?'green':y.includes(e)?'yellow':'red';
+}
+function remCol(r){ return r==='High'?'green':r==='Medium'?'yellow':'red'; }
+function strCol(s){ return s==='Low'?'green':s==='Medium'?'yellow':'red'; }
+function hrCol(h){ const n=parseInt(h); return n<=40?'green':n<=48?'yellow':'red'; }
+
+const EDU_LABEL={
+  "None":"No Degree","HS Diploma":"HS Diploma","Certification":"Certification",
+  "Apprenticeship":"Apprenticeship","Associate":"Associate's","Bachelor's":"Bachelor's",
+  "Master's":"Master's Degree","PhD":"PhD Required","Doctorate":"Doctorate",
+  "MD":"Medical Degree","JD":"Law Degree (JD)"
+};
+const EDU_SUB={
+  "None":"No formal degree","HS Diploma":"High school/GED","Certification":"Industry cert",
+  "Apprenticeship":"Trade apprentice","Associate":"2-year degree","Bachelor's":"4-year university",
+  "Master's":"Graduate school","PhD":"Doctoral research","Doctorate":"Professional doctorate",
+  "MD":"11–15 yrs training","JD":"Law school required"
+};
+const REM_LABEL={"High":"~70–90% remote-friendly","Medium":"Hybrid (~40–60%)","Low":"Mostly on-site"};
+const STR_LABEL={"Low":"Low stress","Medium":"Moderate","High":"High stress","Very High":"Very high"};
+
+// ── JOB DATABASE (60 puzzles, real 2025 data) ─────────────
+const JOBS=[
+  {title:"Software Engineer",industry:"Technology",salary:197764,hired:10707,fired:1543,edu:"Bachelor's",remote:"High",stress:"Medium",hours:"45",weeklyHours:"40–45 hrs",topSkills:"Python, Algorithms, System Design",funFact:"Software Engineers are the #1 most hired tech role in 2025 with 10,707 new hires — yet 1,543 were also laid off as companies restructure teams amid AI adoption."},
+  {title:"Machine Learning Engineer",industry:"Technology",salary:186123,hired:9169,fired:466,edu:"Master's",remote:"High",stress:"Medium",hours:"45",weeklyHours:"40–50 hrs",topSkills:"PyTorch, MLOps, Statistics",funFact:"ML Engineers saw one of the lowest layoff rates in tech at just 5% in 2025, making it one of the most secure high-paying roles in the industry."},
+  {title:"AI Research Scientist",industry:"Technology",salary:205858,hired:7173,fired:588,edu:"PhD",remote:"High",stress:"Medium",hours:"45",weeklyHours:"40–50 hrs",topSkills:"Deep Learning, Research, NLP",funFact:"AI Research Scientists earn over $205K on average — the most lucrative tech-science role in 2025 with rapid growth driven by the generative AI boom."},
+  {title:"Cloud Architect",industry:"Technology",salary:183766,hired:7173,fired:557,edu:"Bachelor's",remote:"High",stress:"Medium",hours:"45",weeklyHours:"40–45 hrs",topSkills:"AWS, Azure, System Design",funFact:"Cloud Architects design the invisible backbone of the internet — with salaries exceeding $183K and layoff rates under 8%, it's among tech's most stable senior roles."},
+  {title:"Data Engineer",industry:"Technology",salary:159004,hired:8853,fired:479,edu:"Bachelor's",remote:"High",stress:"Medium",hours:"45",weeklyHours:"40–45 hrs",topSkills:"SQL, Spark, Kafka, Cloud Pipelines",funFact:"Data Engineers build the pipelines that power AI and analytics. With only 479 layoffs against 8,853 hires in 2025, this is one of tech's most secure roles."},
+  {title:"Blockchain Developer",industry:"Technology",salary:157807,hired:6199,fired:1161,edu:"Bachelor's",remote:"High",stress:"Medium",hours:"45",weeklyHours:"40–45 hrs",topSkills:"Solidity, Web3, Cryptography",funFact:"Blockchain development earns $157K on average in 2025 — enterprise adoption in finance and supply chain keeps demand strong despite crypto market volatility."},
+  {title:"Cybersecurity Analyst",industry:"Technology",salary:119644,hired:6245,fired:1163,edu:"Bachelor's",remote:"High",stress:"High",hours:"45",weeklyHours:"40–50 hrs",topSkills:"SIEM, Threat Analysis, Network Security",funFact:"Cybersecurity is one of the fastest-growing fields in tech — millions of unfilled roles globally as cyber threats increase year over year."},
+  {title:"UX Designer",industry:"Technology",salary:110341,hired:7135,fired:1651,edu:"Bachelor's",remote:"High",stress:"Medium",hours:"40",weeklyHours:"40 hrs",topSkills:"Figma, User Research, Prototyping",funFact:"UX Designers saw the highest layoff count among design roles in 2025 as companies consolidated design teams amid AI tool adoption."},
+  {title:"Scrum Master",industry:"Technology",salary:117009,hired:5212,fired:825,edu:"Certification",remote:"High",stress:"Low",hours:"40",weeklyHours:"40 hrs",topSkills:"Agile, Facilitation, Conflict Resolution",funFact:"Scrum Masters are among the most remote-friendly and lowest-stress tech roles — facilitating team workflow rather than writing code."},
+  {title:"Quantum Computing Researcher",industry:"Technology",salary:193836,hired:1076,fired:95,edu:"PhD",remote:"High",stress:"Medium",hours:"45",weeklyHours:"40–50 hrs",topSkills:"Quantum Mechanics, Linear Algebra, Python",funFact:"Quantum Computing Research is exploding — fewer than 1,100 positions existed in 2025, but salaries approach $200K and growth is projected at 40%+ annually."},
+  {title:"IT Support Specialist",industry:"Technology",salary:61373,hired:3856,fired:160,edu:"Certification",remote:"Medium",stress:"Low",hours:"40",weeklyHours:"40 hrs",topSkills:"Troubleshooting, Networking, Customer Service",funFact:"IT Support has the lowest layoff count in the entire tech sector at just 160 in 2025 — making it the most stable entry-level path into the tech industry."},
+  {title:"Technical Writer",industry:"Technology",salary:85167,hired:4682,fired:508,edu:"Bachelor's",remote:"High",stress:"Low",hours:"40",weeklyHours:"40 hrs",topSkills:"Documentation, API Writing, Communication",funFact:"Technical Writers translate complex engineering into clear docs — remote-friendly, low stress, and steady demand across all tech sectors in 2025."},
+  {title:"Registered Nurse",industry:"Healthcare",salary:86054,hired:47835,fired:7259,edu:"Associate",remote:"Low",stress:"Very High",hours:"48",weeklyHours:"36–48 hrs (shifts)",topSkills:"Patient Care, IV Administration, Critical Thinking",funFact:"Nursing is the single largest profession in the dataset — 47,835 new hires in 2025, nearly 5x more than any tech role. Nurses often work 12-hour rotating shifts."},
+  {title:"Nurse Practitioner",industry:"Healthcare",salary:124598,hired:17013,fired:1692,edu:"Master's",remote:"Low",stress:"High",hours:"45",weeklyHours:"40–50 hrs",topSkills:"Diagnosis, Prescriptions, Patient Management",funFact:"Nurse Practitioners are the fastest-growing advanced healthcare role, with demand driven by physician shortages across rural America in 2025."},
+  {title:"Cardiologist",industry:"Healthcare",salary:462956,hired:1310,fired:50,edu:"MD",remote:"Low",stress:"Very High",hours:"60",weeklyHours:"55–65 hrs",topSkills:"Cardiac Imaging, Interventional Procedures, Patient Care",funFact:"Cardiologists earn nearly $463K/year and have the lowest layoff rate of any healthcare role in the dataset at just 3.8%."},
+  {title:"Physician (General Practice)",industry:"Healthcare",salary:258165,hired:3122,fired:191,edu:"MD",remote:"Low",stress:"Very High",hours:"55",weeklyHours:"50–60 hrs",topSkills:"Diagnosis, Patient Relations, EMR Systems",funFact:"General Practitioners are the backbone of healthcare — 11–15 years of training leads to $258K median salary and one of the most stable careers in medicine."},
+  {title:"Physical Therapist",industry:"Healthcare",salary:98163,hired:9124,fired:1057,edu:"Doctorate",remote:"Low",stress:"Medium",hours:"40",weeklyHours:"40 hrs",topSkills:"Rehabilitation, Anatomy, Manual Therapy",funFact:"Physical Therapists help patients recover from injury and surgery — demand surges as the US population ages and sports medicine expands in 2025."},
+  {title:"Pharmacist",industry:"Healthcare",salary:134781,hired:6869,fired:232,edu:"Doctorate",remote:"Low",stress:"Medium",hours:"40",weeklyHours:"40 hrs",topSkills:"Drug Interactions, Patient Counseling, Dispensing",funFact:"Pharmacists have an exceptionally low layoff rate of just 3.4% in 2025 — a stable, high-paying career available in retail, hospital, and clinical settings."},
+  {title:"Dentist",industry:"Healthcare",salary:183718,hired:4727,fired:492,edu:"Doctorate",remote:"Low",stress:"Medium",hours:"40",weeklyHours:"35–40 hrs",topSkills:"Oral Surgery, Diagnosis, Patient Care",funFact:"Dentists earn $183K on average with predictable hours and low layoff rates — one of the most stable high-income healthcare careers in 2025."},
+  {title:"Pediatrician",industry:"Healthcare",salary:240867,hired:2757,fired:113,edu:"MD",remote:"Low",stress:"High",hours:"50",weeklyHours:"45–55 hrs",topSkills:"Child Development, Diagnosis, Family Communication",funFact:"Pediatricians earn $240K with one of the lowest layoff rates in medicine at just 4.1% — consistently ranked among the most fulfilling careers."},
+  {title:"Speech-Language Pathologist",industry:"Healthcare",salary:89581,hired:6159,fired:647,edu:"Master's",remote:"Medium",stress:"Medium",hours:"40",weeklyHours:"40 hrs",topSkills:"Communication Disorders, Therapy Techniques, Assessment",funFact:"Speech-Language Pathologists help patients regain communication after strokes and treat children with developmental delays — demand is growing at 19% through 2030."},
+  {title:"Attorney (Corporate Law)",industry:"Legal",salary:196766,hired:3862,fired:742,edu:"JD",remote:"Medium",stress:"Very High",hours:"65",weeklyHours:"55–75 hrs",topSkills:"Contracts, M&A, Securities Compliance",funFact:"Corporate lawyers at top firms earn $196K+ before partner — but the road requires 7+ years of school and intense billable hour targets."},
+  {title:"Financial Analyst",industry:"Finance",salary:86021,hired:7324,fired:672,edu:"Bachelor's",remote:"Medium",stress:"High",hours:"55",weeklyHours:"50–60 hrs",topSkills:"Excel Modeling, Valuation, Bloomberg Terminal",funFact:"Financial Analysts are the workhorses of Wall Street, building models that drive billion-dollar decisions — often working 50+ hour weeks on tight deadlines."},
+  {title:"Investment Banker",industry:"Finance",salary:152778,hired:5721,fired:662,edu:"Bachelor's",remote:"Low",stress:"Very High",hours:"80",weeklyHours:"70–100 hrs",topSkills:"Financial Modeling, M&A Execution, Pitchbooks",funFact:"Investment Banking is legendary for its punishing hours — junior analysts routinely log 80–100 hour weeks, earning $150K+ in compensation."},
+  {title:"CFO",industry:"Finance",salary:274310,hired:1578,fired:376,edu:"Master's",remote:"Medium",stress:"Very High",hours:"55",weeklyHours:"50–60 hrs",topSkills:"FP&A, Capital Allocation, Board Reporting",funFact:"CFOs are among the highest-paid executives at $274K — but only 1,578 new CFO slots open per year across the entire US market."},
+  {title:"Actuary",industry:"Finance",salary:121587,hired:3042,fired:390,edu:"Bachelor's",remote:"High",stress:"Low",hours:"40",weeklyHours:"40 hrs",topSkills:"Statistics, Risk Modeling, Excel",funFact:"Actuaries have one of the highest job satisfaction scores in finance with predictable hours, excellent pay, and remote-friendly roles in 2025."},
+  {title:"Elementary School Teacher",industry:"Education",salary:49628,hired:25072,fired:3690,edu:"Bachelor's",remote:"Low",stress:"High",hours:"50",weeklyHours:"45–55 hrs incl. prep",topSkills:"Curriculum Design, Classroom Management, Communication",funFact:"Elementary teachers are among the most hired professionals — 25,072 new roles in 2025 — yet salaries remain under $50K nationally despite the crucial work."},
+  {title:"University Professor",industry:"Education",salary:114015,hired:7343,fired:1455,edu:"PhD",remote:"Medium",stress:"Medium",hours:"45",weeklyHours:"40–50 hrs",topSkills:"Research, Teaching, Grant Writing",funFact:"Tenure-track professorships are highly competitive — only 7,343 were hired nationally in 2025 across all academic disciplines combined."},
+  {title:"Social Media Manager",industry:"Marketing",salary:63420,hired:11992,fired:2951,edu:"Bachelor's",remote:"High",stress:"High",hours:"45",weeklyHours:"40–50 hrs",topSkills:"Content Strategy, Platform Analytics, Copywriting",funFact:"Social Media Management has one of the highest turnover rates in marketing — 2,951 layoffs against 11,992 hires in 2025 reflect the fast-moving nature of the field."},
+  {title:"Marketing Manager",industry:"Marketing",salary:116404,hired:8184,fired:639,edu:"Bachelor's",remote:"Medium",stress:"Medium",hours:"45",weeklyHours:"40–45 hrs",topSkills:"Campaign Strategy, Analytics, Brand Management",funFact:"Marketing Managers earn $116K on average in 2025 — significantly more than specialist roles and with a much lower layoff rate than social media managers."},
+  {title:"Mechanical Engineer",industry:"Engineering",salary:101645,hired:7432,fired:1383,edu:"Bachelor's",remote:"Low",stress:"Medium",hours:"40",weeklyHours:"40 hrs",topSkills:"CAD, Thermodynamics, Manufacturing Process",funFact:"Mechanical Engineering is one of the most versatile degrees — graduates work across aerospace, automotive, robotics, and medical device industries."},
+  {title:"Civil Engineer",industry:"Engineering",salary:95231,hired:8156,fired:1072,edu:"Bachelor's",remote:"Low",stress:"Medium",hours:"40",weeklyHours:"40–45 hrs",topSkills:"Structural Design, AutoCAD, Project Management",funFact:"Civil Engineers build the roads, bridges, and water systems — 8,156 new roles opened in 2025 driven by the bipartisan infrastructure spending bill."},
+  {title:"Aerospace Engineer",industry:"Engineering",salary:133076,hired:3834,fired:272,edu:"Bachelor's",remote:"Low",stress:"Medium",hours:"45",weeklyHours:"40–50 hrs",topSkills:"Aerodynamics, MATLAB, Systems Design",funFact:"Aerospace Engineering had one of the lowest layoff rates in engineering at just 7% in 2025 — with SpaceX and defense contracts driving robust new hiring."},
+  {title:"Management Consultant",industry:"Business",salary:149128,hired:7625,fired:1086,edu:"Master's",remote:"Medium",stress:"Very High",hours:"65",weeklyHours:"55–80 hrs",topSkills:"Problem Solving, Slide Decks, Data Analysis",funFact:"Top consulting firms pay $100K+ to new graduates — but expect 60–80 hour weeks, constant travel, and high-stakes presentations to C-suite executives."},
+  {title:"Sales Representative",industry:"Business",salary:65572,hired:16784,fired:3905,edu:"HS Diploma",remote:"Medium",stress:"High",hours:"45",weeklyHours:"40–50 hrs",topSkills:"Persuasion, CRM Systems, Negotiation",funFact:"Sales is the most volatile profession in the dataset — 16,784 hired vs 3,905 laid off in a single year reflects the boom-bust nature of sales headcount cycles."},
+  {title:"Human Resources Manager",industry:"Business",salary:102161,hired:7553,fired:962,edu:"Bachelor's",remote:"Medium",stress:"Medium",hours:"40",weeklyHours:"40 hrs",topSkills:"Recruiting, Labor Law, Employee Relations",funFact:"HR Managers are in demand across every sector — the job spans recruiting, benefits, conflict resolution, and compliance all in one role."},
+  {title:"Police Officer",industry:"Government",salary:62620,hired:9346,fired:2648,edu:"HS Diploma",remote:"Low",stress:"Very High",hours:"45",weeklyHours:"40–50 hrs (rotating shifts)",topSkills:"De-escalation, Law Enforcement, Physical Fitness",funFact:"Police Officers face some of the highest physical and psychological stress of any profession — with rotating shifts, public scrutiny, and personal risk."},
+  {title:"Firefighter",industry:"Government",salary:59188,hired:6614,fired:1729,edu:"Certification",remote:"Low",stress:"Very High",hours:"56",weeklyHours:"48–56 hrs (24-hr shifts)",topSkills:"Fire Suppression, EMT Skills, Teamwork",funFact:"Firefighters work grueling 24-hour shifts and face extreme physical danger — yet median pay remains under $60K despite the intense demands of the job."},
+  {title:"Social Worker",industry:"Government",salary:53253,hired:9303,fired:969,edu:"Bachelor's",remote:"Low",stress:"Very High",hours:"45",weeklyHours:"40–50 hrs",topSkills:"Case Management, Counseling, Advocacy",funFact:"Social Workers support vulnerable populations — yet earn some of the lowest wages relative to their education requirements and emotional labor demands."},
+  {title:"Real Estate Agent",industry:"Real Estate",salary:73548,hired:18732,fired:1286,edu:"Certification",remote:"Medium",stress:"Medium",hours:"50",weeklyHours:"45–60 hrs",topSkills:"Negotiation, Market Analysis, Networking",funFact:"Real Estate Agents are among the most hired in 2025 at 18,732 new agents — but income is entirely commission-based, making salaries highly variable."},
+  {title:"Construction Manager",industry:"Trades",salary:108067,hired:7401,fired:629,edu:"Bachelor's",remote:"Low",stress:"High",hours:"50",weeklyHours:"45–55 hrs",topSkills:"Project Scheduling, Budgeting, Blueprint Reading",funFact:"Construction Managers oversee billion-dollar builds — demand surges with infrastructure, housing, and renewable energy projects accelerating in 2025."},
+  {title:"Electrician (Contractor)",industry:"Trades",salary:87184,hired:8141,fired:553,edu:"Apprenticeship",remote:"Low",stress:"Medium",hours:"45",weeklyHours:"40–50 hrs",topSkills:"Wiring, NEC Code Compliance, Troubleshooting",funFact:"Electrical contractors are in massive demand due to the EV revolution and grid modernization — with just a 6.8% layoff rate in 2025, it's a very stable trade."},
+  {title:"Solar Panel Installer",industry:"Trades",salary:58171,hired:9137,fired:321,edu:"Certification",remote:"Low",stress:"Medium",hours:"40",weeklyHours:"40 hrs",topSkills:"PV Systems Installation, Electrical, Safety Protocols",funFact:"Solar installation is one of the fastest-growing trades in the US — 9,137 new hires and only 321 layoffs in 2025 gives it an exceptional net growth rate."},
+  {title:"Airline Pilot",industry:"Hospitality",salary:204378,hired:5703,fired:247,edu:"Certification",remote:"Low",stress:"High",hours:"75",weeklyHours:"75 hrs flight time/mo",topSkills:"Aviation, Navigation, Crew Resource Management",funFact:"Airline Pilots earn $204K on average in 2025 — the global pilot shortage means demand is sky-high, and the career offers world travel as a daily commute."},
+  {title:"Hotel Manager",industry:"Hospitality",salary:65481,hired:8211,fired:700,edu:"Bachelor's",remote:"Low",stress:"High",hours:"50",weeklyHours:"45–55 hrs",topSkills:"Revenue Management, Guest Relations, Leadership",funFact:"Hotel Managers oversee every aspect of a property — from staffing and financials to guest experience — in one of the most complex operations roles in business."},
+  {title:"Personal Trainer",industry:"Sports",salary:49980,hired:12662,fired:1391,edu:"Certification",remote:"Low",stress:"Low",hours:"40",weeklyHours:"35–45 hrs",topSkills:"Fitness Programming, Nutritional Guidance, Motivation",funFact:"Personal Training is booming in 2025 with 12,662 new hires — but most trainers work part-time or as independent contractors, making $50K harder to achieve."},
+  {title:"Sustainability Manager",industry:"Environment",salary:92821,hired:6718,fired:846,edu:"Bachelor's",remote:"High",stress:"Medium",hours:"40",weeklyHours:"40 hrs",topSkills:"ESG Reporting, Carbon Accounting, Stakeholder Management",funFact:"Sustainability Managers are one of the fastest-growing business roles — as ESG reporting becomes mandatory for major corporations globally in 2025."},
+  {title:"Climate Scientist",industry:"Environment",salary:92608,hired:3179,fired:116,edu:"PhD",remote:"High",stress:"Medium",hours:"45",weeklyHours:"40–50 hrs",topSkills:"Climate Modeling, Statistical Analysis, Scientific Writing",funFact:"Climate Scientists have one of the lowest layoff rates in the entire dataset at just 3.6% — critical research makes these roles extraordinarily stable."},
+  {title:"Renewable Energy Analyst",industry:"Environment",salary:87395,hired:5272,fired:342,edu:"Bachelor's",remote:"High",stress:"Low",hours:"40",weeklyHours:"40 hrs",topSkills:"Energy Modeling, Policy Analysis, Financial Modeling",funFact:"Renewable Energy Analysts sit at the intersection of finance, policy, and engineering — 2025 saw record hiring in this sector as clean energy investment surged."},
+  {title:"ESG Analyst",industry:"Environment",salary:94657,hired:6174,fired:816,edu:"Bachelor's",remote:"High",stress:"Low",hours:"40",weeklyHours:"40 hrs",topSkills:"Sustainability Reporting, Data Analysis, Finance",funFact:"ESG Analysts are in explosive demand as regulators worldwide mandate corporate sustainability disclosures — one of the fastest-growing finance-adjacent roles."},
+  {title:"Epidemiologist",industry:"Science",salary:90869,hired:3242,fired:342,edu:"Master's",remote:"High",stress:"Medium",hours:"40",weeklyHours:"40 hrs",topSkills:"Disease Surveillance, Statistical Analysis, R/SAS",funFact:"Epidemiologists track disease spread across populations — demand surged post-COVID and remains elevated as public health infrastructure investment grows."},
+  {title:"Data Scientist",industry:"Technology",salary:152484,hired:7999,fired:1501,edu:"Master's",remote:"High",stress:"Medium",hours:"45",weeklyHours:"40–50 hrs",topSkills:"Machine Learning, SQL, Python, Statistics",funFact:"Data Science remains one of the hottest careers — but layoffs surged in 2025 as AI tools automate routine data analysis tasks previously done by humans."},
+  {title:"Astronaut",industry:"Other",salary:147106,hired:118,fired:10,edu:"PhD",remote:"Low",stress:"Very High",hours:"80",weeklyHours:"Mission-dependent",topSkills:"Engineering, Science, Physical Fitness, Leadership",funFact:"Only 118 astronaut positions were filled in all of 2025 — making it statistically one of the most selective careers on Earth (and beyond)."},
+  {title:"Genetic Counselor",industry:"Healthcare",salary:93728,hired:2484,fired:275,edu:"Master's",remote:"Medium",stress:"Medium",hours:"40",weeklyHours:"40 hrs",topSkills:"Genomics, Risk Assessment, Patient Counseling",funFact:"Genetic Counselors advise patients on hereditary conditions and personalized medicine — a niche but fast-growing specialty with 22% projected growth."},
+  {title:"Journalist",industry:"Media",salary:52294,hired:5023,fired:829,edu:"Bachelor's",remote:"Medium",stress:"High",hours:"45",weeklyHours:"40–50 hrs",topSkills:"Investigative Writing, Interviewing, Fact-Checking",funFact:"Print journalism has declined for decades — digital media disruption continues to shrink newsrooms and squeeze salaries even as demand for content grows."},
+  {title:"Game Developer",industry:"Technology",salary:120032,hired:7550,fired:759,edu:"Bachelor's",remote:"High",stress:"High",hours:"50",weeklyHours:"45–60 hrs (crunch seasons)",topSkills:"Unity/Unreal Engine, C++, Game Design",funFact:"Game Developers earned $120K on average in 2025, but the industry is infamous for 'crunch' — weeks of 60–80 hour stretches before major releases."},
+  {title:"Interior Designer",industry:"Architecture",salary:60275,hired:6073,fired:370,edu:"Bachelor's",remote:"Medium",stress:"Medium",hours:"40",weeklyHours:"40 hrs",topSkills:"Space Planning, AutoCAD, Color Theory",funFact:"Interior Designers blend art and function — growing demand for sustainable and wellness-focused spaces is reshaping the field significantly in 2025."},
+  {title:"Architect",industry:"Architecture",salary:91265,hired:4494,fired:366,edu:"Master's",remote:"Low",stress:"Medium",hours:"45",weeklyHours:"40–50 hrs",topSkills:"AutoCAD, Revit, Design Thinking, Code Compliance",funFact:"Becoming a licensed architect requires 5–7 years of education plus 3 years of internship experience before qualifying for the licensing examination."},
+  {title:"Forensic Scientist",industry:"Science",salary:72199,hired:4031,fired:564,edu:"Bachelor's",remote:"Low",stress:"Medium",hours:"40",weeklyHours:"40 hrs",topSkills:"Evidence Analysis, Lab Techniques, Expert Testimony",funFact:"Forensic Scientists analyze physical evidence for criminal investigations — the CSI effect has increased public interest, but actual roles require rigorous lab work."},
+];
+
+const ALL_TITLES = JOBS.map(j=>j.title);
+
+// ── GAME STATE ─────────────────────────────────────────────
+let puzzle, guessCount, gameOver, history, acActive=(-1);
+
+function getDayIdx(){ const base=new Date("2025-01-01"),now=new Date(); return Math.floor((now-base)/86400000)%JOBS.length; }
+
+function init(){
+  puzzle=JOBS[getDayIdx()];
+  guessCount=0; gameOver=false; history=[];
+  document.getElementById('guessList').innerHTML='';
+  document.getElementById('jobInput').value='';
+  document.getElementById('guessBtn').disabled=false;
+  document.getElementById('counter').textContent='6 GUESSES LEFT';
+  for(let i=0;i<6;i++) document.getElementById('dot'+i).className='dot';
+  renderCard();
+}
+
+function renderCard(){
+  const j=puzzle;
+  const net=j.hired-j.fired;
+  const layoffPct=((j.fired/j.hired)*100).toFixed(1);
+  const tiles=[
+    {span:true,icon:'💰',name:'Annual Salary',val:'$'+Math.round(j.salary/1000)+'K median',sub:j.industry+' · 2025',color:salCol(j.salary)},
+    {icon:'📈',name:'2025 Net Hiring',val:(net>0?'+':'')+net.toLocaleString(),sub:layoffPct+'% layoff rate',color:growCol(j.hired,j.fired)},
+    {icon:'🎓',name:'Education Req.',val:EDU_LABEL[j.edu]||j.edu,sub:EDU_SUB[j.edu]||'',color:eduCol(j.edu)},
+    {icon:'🏠',name:'Remote Work',val:j.remote,sub:REM_LABEL[j.remote],color:remCol(j.remote)},
+    {icon:'🧠',name:'Stress Level',val:j.stress,sub:STR_LABEL[j.stress],color:strCol(j.stress)},
+    {icon:'⏱',name:'Weekly Hours',val:j.weeklyHours,sub:'Typical schedule',color:hrCol(j.hours)},
+  ];
+  document.getElementById('tileGrid').innerHTML=tiles.map(t=>`
+    <div class="tile ${t.color}${t.span?' span2':''}">
+      <div class="tile-icon">${t.icon}</div>
+      <div class="tile-name">${t.name}</div>
+      <div class="tile-val">${t.val}</div>
+      <div class="tile-sub">${t.sub}</div>
+    </div>`).join('');
+  document.getElementById('cardBottom').innerHTML=[
+    `<div class="mini-pill">Top Skills: <span>${j.topSkills}</span></div>`,
+    `<div class="mini-pill">Hired 2025: <span>${j.hired.toLocaleString()}</span></div>`,
+    `<div class="mini-pill">Laid Off 2025: <span>${j.fired.toLocaleString()}</span></div>`,
+  ].join('');
+}
+
+// ── SIMILARITY ─────────────────────────────────────────────
+function sim(gTitle){
+  const g=JOBS.find(j=>j.title.toLowerCase()===gTitle.toLowerCase());
+  if(!g) return Math.round(strSim(gTitle,puzzle.title)*30);
+  if(g.title===puzzle.title) return 100;
+  let s=0;
+  if(g.industry===puzzle.industry) s+=30;
+  const sd=Math.abs(g.salary-puzzle.salary);
+  s+=Math.max(0,25-Math.round(sd/8000));
+  if(g.edu===puzzle.edu) s+=15;
+  if(g.remote===puzzle.remote) s+=10;
+  if(g.stress===puzzle.stress) s+=10;
+  if(g.hours===puzzle.hours) s+=5;
+  const as=g.topSkills.split(', '),bs=puzzle.topSkills.split(', ');
+  s+=as.filter(x=>bs.includes(x)).length*2;
+  return Math.min(99,s);
+}
+function strSim(a,b){
+  a=a.toLowerCase();b=b.toLowerCase();
+  if(a===b)return 1;
+  let m=0;for(const c of a)if(b.includes(c))m++;
+  return m/Math.max(a.length,b.length);
+}
+
+// ── GUESS ──────────────────────────────────────────────────
+function makeGuess(){
+  if(gameOver)return;
+  const inp=document.getElementById('jobInput').value.trim();
+  if(!inp)return;
+  document.getElementById('acList').classList.remove('open');
+  const s=sim(inp);
+  const correct=inp.toLowerCase()===puzzle.title.toLowerCase();
+  const cls=correct?'correct':s>=55?'close':'wrong';
+  const pct=correct?'✓ CORRECT':s+'% match';
+  const row=document.createElement('div');
+  row.className='guess-row '+cls;
+  row.innerHTML=`<div class="guess-name">${inp}</div><div class="bar-wrap"><div class="bar-fill" style="width:0%"></div></div><div class="guess-pct">${pct}</div>`;
+  document.getElementById('guessList').prepend(row);
+  setTimeout(()=>{row.querySelector('.bar-fill').style.width=s+'%'},40);
+  document.getElementById('dot'+guessCount).className='dot '+(correct?'win':'lose');
+  history.push({inp,s,correct});
+  guessCount++;
+  const left=6-guessCount;
+  document.getElementById('counter').textContent=left?left+' GUESS'+(left!==1?'ES':'')+' LEFT':'NO GUESSES LEFT';
+  document.getElementById('jobInput').value='';
+  if(correct){gameOver=true;setTimeout(()=>showModal(true),500);}
+  else if(guessCount>=6){gameOver=true;document.getElementById('guessBtn').disabled=true;setTimeout(()=>showModal(false),500);}
+}
+
+// ── MODAL ──────────────────────────────────────────────────
+function showModal(won){
+  const j=puzzle;
+  document.getElementById('mEmoji').textContent=won?['🎉','🏆','🧠','⭐'][guessCount%4]:'😞';
+  document.getElementById('mTitle').textContent=won?'NAILED IT!':'GAME OVER';
+  document.getElementById('mSub').textContent=won?`Solved in ${guessCount} guess${guessCount!==1?'es':''}!`:'The answer was…';
+  document.getElementById('mJob').textContent=j.title;
+  document.getElementById('mStats').innerHTML=[
+    `<div class="m-stat">Salary: <span>$${j.salary.toLocaleString()}</span></div>`,
+    `<div class="m-stat">Industry: <span>${j.industry}</span></div>`,
+    `<div class="m-stat">Education: <span>${EDU_LABEL[j.edu]||j.edu}</span></div>`,
+    `<div class="m-stat">Remote: <span>${j.remote}</span></div>`,
+    `<div class="m-stat">Hired '25: <span>${j.hired.toLocaleString()}</span></div>`,
+    `<div class="m-stat">Laid off: <span>${j.fired.toLocaleString()}</span></div>`,
+  ].join('');
+  document.getElementById('mFact').textContent='💡 '+j.funFact;
+  document.getElementById('overlay').classList.add('show');
+}
+
+function shareScore(){
+  const icons=history.map(g=>g.correct?'🟢':g.s>=55?'🟡':'🔴').join('');
+  const score=history.some(g=>g.correct)?guessCount+'/6':'X/6';
+  const txt=`CAREERDLE – ${puzzle.title}\n${score}\n${icons}\nhttps://careerdle.game`;
+  if(navigator.share) navigator.share({text:txt});
+  else navigator.clipboard.writeText(txt).then(()=>alert('Copied!'));
+}
+
+function nextPuzzle(){
+  document.getElementById('overlay').classList.remove('show');
+  const cur=JOBS.indexOf(puzzle);
+  puzzle=JOBS[(cur+1)%JOBS.length];
+  guessCount=0;gameOver=false;history=[];
+  document.getElementById('guessList').innerHTML='';
+  document.getElementById('jobInput').value='';
+  document.getElementById('guessBtn').disabled=false;
+  document.getElementById('counter').textContent='6 GUESSES LEFT';
+  for(let i=0;i<6;i++) document.getElementById('dot'+i).className='dot';
+  renderCard();
+}
+
+// ── AUTOCOMPLETE ───────────────────────────────────────────
+function onInput(e){
+  const val=e.target.value.toLowerCase().trim();
+  const list=document.getElementById('acList');
+  acActive=-1;
+  if(!val){list.classList.remove('open');return;}
+  const m=ALL_TITLES.filter(t=>t.toLowerCase().includes(val)).slice(0,10);
+  if(!m.length){list.classList.remove('open');return;}
+  list.innerHTML=m.map(t=>`<div class="ac-item" onclick="pick(${JSON.stringify(t)})">${t}</div>`).join('');
+  list.classList.add('open');
+}
+function pick(v){document.getElementById('jobInput').value=v;document.getElementById('acList').classList.remove('open');document.getElementById('jobInput').focus();}
+function onKey(e){
+  const list=document.getElementById('acList');
+  const items=list.querySelectorAll('.ac-item');
+  if(e.key==='ArrowDown'){acActive=Math.min(acActive+1,items.length-1);items.forEach((el,i)=>el.classList.toggle('active',i===acActive));}
+  else if(e.key==='ArrowUp'){acActive=Math.max(acActive-1,-1);items.forEach((el,i)=>el.classList.toggle('active',i===acActive));}
+  else if(e.key==='Enter'){if(acActive>=0&&items[acActive])pick(items[acActive].textContent);else makeGuess();}
+  else if(e.key==='Escape')list.classList.remove('open');
+}
+document.addEventListener('click',e=>{if(!e.target.closest('.input-row')&&!e.target.closest('#acList'))document.getElementById('acList').classList.remove('open');});
+function toggleHow(){document.getElementById('howto').classList.toggle('open');}
+
+init();
+</script>
+</body>
+</html>
