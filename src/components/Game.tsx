@@ -16,8 +16,8 @@ interface Props {
   onShowStats: () => void;
 }
 
-function pickRandomJob(jobs: Job[], excludeId?: string): Job {
-  const pool = excludeId ? jobs.filter((j) => j.id !== excludeId) : jobs;
+function pickRandomJob(jobs: Job[], excludeId?: number): Job {
+  const pool = excludeId != null ? jobs.filter((j) => j.id !== excludeId) : jobs;
   return pool[Math.floor(Math.random() * pool.length)];
 }
 
