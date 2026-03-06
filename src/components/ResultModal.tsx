@@ -6,9 +6,10 @@ interface Props {
   guesses: GuessEntry[];
   answer: Job;
   onClose: () => void;
+  onNext: () => void;
 }
 
-export default function ResultModal({ won, guesses, answer, onClose }: Props) {
+export default function ResultModal({ won, guesses, answer, onClose, onNext }: Props) {
   const [copied, setCopied] = useState(false);
 
   const hired = answer.years["2025"]?.hired ?? 0;
@@ -74,8 +75,8 @@ export default function ResultModal({ won, guesses, answer, onClose }: Props) {
           <button className="mbtn pri" onClick={share}>
             {copied ? "✓ COPIED" : "📤 SHARE"}
           </button>
-          <button className="mbtn sec" onClick={onClose}>
-            CLOSE
+          <button className="mbtn pri" onClick={onNext}>
+            🔄 NEXT
           </button>
         </div>
       </div>

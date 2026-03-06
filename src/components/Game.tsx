@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback } from "react";
 import type { Job, GuessEntry, GameState } from "../lib/types";
 import { getDailyJob, getDateKey } from "../lib/daily";
 import { computeSimilarity } from "../lib/feedback";
@@ -16,10 +16,17 @@ interface Props {
   onShowStats: () => void;
 }
 
+function pickRandomJob(jobs: Job[], excludeId?: string): Job {
+  const pool = excludeId ? jobs.filter((j) => j.id !== excludeId) : jobs;
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
 export default function Game({ onShowStats: _onShowStats }: Props) {
   const jobs = jobsData as Job[];
+  const [roundKey, setRoundKey] = useState(0);
+  const [answer, setAnswer] = useState<Job>(() => getDailyJob(jobs));
+
   const dateKey = getDateKey();
-  const answer = useMemo(() => getDailyJob(jobs), [jobs]);
 
   const [state, setState] = useState<GameState>(() => {
     const saved = loadGameState(dateKey);
@@ -66,6 +73,20 @@ export default function Game({ onShowStats: _onShowStats }: Props) {
     }
   }
 
+  const handleNext = useCallback(() => {
+    const newJob = pickRandomJob(jobs, answer.id);
+    setAnswer(newJob);
+    const newState: GameState = {
+      dateKey: `random-${Date.now()}`,
+      guesses: [],
+      answerId: newJob.id,
+      status: "playing",
+    };
+    setState(newState);
+    setShowResult(false);
+    setRoundKey((k) => k + 1);
+  }, [jobs, answer.id]);
+
   const usedIds = useMemo(
     () => new Set(state.guesses.map((g) => g.jobId)),
     [state.guesses]
@@ -75,7 +96,7 @@ export default function Game({ onShowStats: _onShowStats }: Props) {
 
   return (
     <>
-      <TileGrid job={answer} guessesLeft={guessesLeft} />
+      <TileGrid key={`tiles-${roundKey}`} job={answer} guessesLeft={guessesLeft} />
 
       <DotRow guesses={state.guesses} maxGuesses={MAX_GUESSES} />
 
@@ -94,6 +115,7 @@ export default function Game({ onShowStats: _onShowStats }: Props) {
           guesses={state.guesses}
           answer={answer}
           onClose={() => setShowResult(false)}
+          onNext={handleNext}
         />
       )}
     </>
