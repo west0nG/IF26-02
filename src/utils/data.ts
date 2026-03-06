@@ -11,7 +11,7 @@ export interface Job {
 
 export type YearData = Record<string, Job[]>;
 
-export const data = jobsData as YearData;
+export const data = jobsData as unknown as YearData;
 export const years = Object.keys(data).map(Number).sort();
 
 export interface IndustryAggregate {
