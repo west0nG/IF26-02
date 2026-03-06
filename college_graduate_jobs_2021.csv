@@ -1,0 +1,1129 @@
+"2021 College Graduate Career Jobs — Hiring & Layoff Data (US) [CPI-Adjusted to 2025 USD, factor=1.1878]",,,,,
+#,Job Title,Industry / Category,Avg. Salary (2025 USD),# Hired in 2021,# Fired / Laid Off in 2021
+1.0,Software Engineer,Technology,192625.67,11855.0,1447.0
+2.0,Frontend Developer,Technology,161150.74,9447.0,327.0
+3.0,Backend Developer,Technology,167869.07,11625.0,396.0
+4.0,Full Stack Developer,Technology,178285.09,9874.0,550.0
+5.0,Mobile App Developer (iOS),Technology,147882.76,10306.0,832.0
+6.0,Mobile App Developer (Android),Technology,151867.91,8506.0,815.0
+7.0,Data Scientist,Technology,151961.74,9492.0,1377.0
+8.0,Data Engineer,Technology,154723.43,10390.0,380.0
+9.0,Data Analyst,Technology,109514.89,6006.0,375.0
+10.0,Machine Learning Engineer,Technology,189898.43,10143.0,324.0
+11.0,AI Research Scientist,Technology,210463.21,7255.0,490.0
+12.0,DevOps Engineer,Technology,172616.8,10040.0,893.0
+13.0,Site Reliability Engineer,Technology,178869.5,7610.0,418.0
+14.0,Cloud Architect,Technology,192097.09,7520.0,399.0
+15.0,Cybersecurity Analyst,Technology,118036.34,6913.0,458.0
+16.0,Penetration Tester,Technology,129481.01,3841.0,199.0
+17.0,Security Engineer,Technology,155399.3,6615.0,380.0
+18.0,Network Engineer,Technology,115088.16,5545.0,427.0
+19.0,Systems Administrator,Technology,95285.96,4505.0,739.0
+20.0,IT Support Specialist,Technology,62180.15,4015.0,98.0
+21.0,Database Administrator,Technology,117531.51,6715.0,650.0
+22.0,Blockchain Developer,Technology,163872.04,7286.0,764.0
+23.0,Game Developer,Technology,122673.6,8457.0,725.0
+24.0,Embedded Systems Engineer,Technology,125965.05,4095.0,338.0
+25.0,QA Engineer,Technology,103404.73,7306.0,800.0
+26.0,Product Manager (Tech),Technology,173450.65,7960.0,407.0
+27.0,Technical Program Manager,Technology,172000.32,6204.0,326.0
+28.0,Solutions Architect,Technology,183292.95,6219.0,272.0
+29.0,UX Designer,Technology,118089.79,7642.0,945.0
+30.0,UI Designer,Technology,105802.95,6832.0,695.0
+31.0,UX Researcher,Technology,116613.32,5318.0,1003.0
+32.0,Product Designer,Technology,127145.75,6753.0,1170.0
+33.0,Scrum Master,Technology,121542.79,6774.0,507.0
+34.0,IT Project Manager,Technology,124070.48,4887.0,618.0
+35.0,ERP Consultant,Technology,117246.43,3954.0,450.0
+36.0,Salesforce Developer,Technology,139898.22,7202.0,647.0
+37.0,Business Intelligence Analyst,Technology,105934.8,4450.0,913.0
+38.0,Cloud Engineer (AWS),Technology,162225.72,8697.0,846.0
+39.0,Cloud Engineer (Azure),Technology,152542.59,7396.0,895.0
+40.0,Cloud Engineer (GCP),Technology,152459.44,6739.0,712.0
+41.0,Platform Engineer,Technology,163703.37,6605.0,1099.0
+42.0,Hardware Engineer,Technology,130785.24,4406.0,184.0
+43.0,Firmware Engineer,Technology,127532.98,4165.0,175.0
+44.0,Robotics Engineer,Technology,148937.55,3397.0,172.0
+45.0,Computer Vision Engineer,Technology,177286.13,5625.0,219.0
+46.0,NLP Engineer,Technology,186203.11,4600.0,346.0
+47.0,AR/VR Developer,Technology,141529.1,4494.0,191.0
+48.0,Quantum Computing Researcher,Technology,210422.82,992.0,58.0
+49.0,IT Auditor,Technology,100144.16,3359.0,429.0
+50.0,Technical Writer,Technology,84089.55,5111.0,411.0
+51.0,Investment Banker,Finance,155256.76,5506.0,715.0
+52.0,Financial Analyst,Finance,89008.32,6643.0,409.0
+53.0,Portfolio Manager,Finance,179476.47,3401.0,385.0
+54.0,Equity Research Analyst,Finance,119755.11,3030.0,805.0
+55.0,Risk Analyst,Finance,96188.71,3842.0,618.0
+56.0,Credit Analyst,Finance,82507.36,3884.0,459.0
+57.0,Loan Officer,Finance,76672.78,4803.0,536.0
+58.0,Financial Planner,Finance,92319.97,5434.0,768.0
+59.0,Wealth Manager,Finance,131001.42,3860.0,202.0
+60.0,Actuary,Finance,122557.19,3353.0,320.0
+61.0,Quantitative Analyst,Finance,178359.92,3921.0,697.0
+62.0,Trader,Finance,154192.48,4353.0,747.0
+63.0,Hedge Fund Analyst,Finance,158587.42,2594.0,418.0
+64.0,Private Equity Analyst,Finance,141734.59,2082.0,314.0
+65.0,Venture Capital Analyst,Finance,133024.28,1694.0,264.0
+66.0,Corporate Finance Analyst,Finance,95643.5,4860.0,1336.0
+67.0,Treasury Analyst,Finance,88606.84,3559.0,314.0
+68.0,Tax Associate,Finance,82932.61,4931.0,419.0
+69.0,Accountant (CPA),Finance,81826.74,5987.0,552.0
+70.0,Auditor,Finance,74432.55,5432.0,567.0
+71.0,Forensic Accountant,Finance,105359.89,2521.0,228.0
+72.0,Controller,Finance,151820.39,2679.0,490.0
+73.0,CFO,Finance,282870.52,1606.0,280.0
+74.0,Compliance Officer,Finance,109678.81,4322.0,414.0
+75.0,Underwriter,Finance,97882.54,3324.0,419.0
+76.0,Insurance Agent,Finance,69124.16,7681.0,855.0
+77.0,Claims Adjuster,Finance,65525.06,5390.0,1188.0
+78.0,Mortgage Broker,Finance,87563.93,4334.0,575.0
+79.0,Real Estate Analyst,Finance,95481.95,3758.0,357.0
+80.0,Budget Analyst,Finance,84660.89,4546.0,475.0
+81.0,Economic Consultant,Finance,117670.49,2385.0,326.0
+82.0,Economist,Finance,117595.65,2385.0,233.0
+83.0,Financial Examiner,Finance,87843.07,3259.0,319.0
+84.0,Bookkeeper,Finance,49447.88,3743.0,908.0
+85.0,Payroll Specialist,Finance,56393.08,3998.0,501.0
+86.0,Physician (General Practice),Healthcare,251476.36,3147.0,166.0
+87.0,Surgeon,Healthcare,395803.96,2232.0,301.0
+88.0,Psychiatrist,Healthcare,283418.1,2552.0,220.0
+89.0,Pediatrician,Healthcare,232530.58,3137.0,80.0
+90.0,Cardiologist,Healthcare,453425.25,1443.0,35.0
+91.0,Dermatologist,Healthcare,402943.97,1457.0,45.0
+92.0,Neurologist,Healthcare,342550.3,1734.0,158.0
+93.0,Radiologist,Healthcare,442490.15,1485.0,130.0
+94.0,Anesthesiologist,Healthcare,405266.16,1843.0,107.0
+95.0,Oncologist,Healthcare,375228.5,1851.0,49.0
+96.0,Orthopedic Surgeon,Healthcare,497741.74,1265.0,57.0
+97.0,Emergency Medicine Physician,Healthcare,353586.36,2180.0,207.0
+98.0,Nurse Practitioner,Healthcare,124468.4,21184.0,1163.0
+99.0,Registered Nurse,Healthcare,87692.21,49100.0,4001.0
+100.0,Physician Assistant,Healthcare,135148.11,12743.0,1084.0
+101.0,Pharmacist,Healthcare,127508.03,7713.0,174.0
+102.0,Physical Therapist,Healthcare,95018.7,11377.0,703.0
+103.0,Occupational Therapist,Healthcare,96738.67,10114.0,623.0
+104.0,Speech-Language Pathologist,Healthcare,91305.57,7050.0,386.0
+105.0,Dental Hygienist,Healthcare,78283.47,7978.0,302.0
+106.0,Dentist,Healthcare,184056.72,5357.0,386.0
+107.0,Optometrist,Healthcare,134353.46,4262.0,144.0
+108.0,Chiropractor,Healthcare,85925.92,4158.0,235.0
+109.0,Veterinarian,Healthcare,134956.87,4373.0,236.0
+110.0,Radiologic Technologist,Healthcare,67448.15,8130.0,821.0
+111.0,Medical Laboratory Scientist,Healthcare,76235.66,7898.0,655.0
+112.0,Clinical Social Worker,Healthcare,65191.28,10568.0,425.0
+113.0,Respiratory Therapist,Healthcare,72193.5,6844.0,318.0
+114.0,Dietitian / Nutritionist,Healthcare,70977.17,6479.0,244.0
+115.0,Healthcare Administrator,Healthcare,110474.65,9293.0,961.0
+116.0,Medical Coder,Healthcare,54965.32,6986.0,765.0
+117.0,Medical Transcriptionist,Healthcare,42203.35,3576.0,172.0
+118.0,Genetic Counselor,Healthcare,92969.71,2545.0,214.0
+119.0,Biomedical Engineer,Healthcare,102447.35,5465.0,322.0
+120.0,Clinical Research Coordinator,Healthcare,65267.3,5768.0,204.0
+121.0,Attorney (Corporate Law),Legal,184289.53,4118.0,415.0
+122.0,Attorney (Criminal Defense),Legal,79017.54,3841.0,416.0
+123.0,Attorney (Family Law),Legal,76649.02,3986.0,341.0
+124.0,Attorney (Immigration),Legal,69158.61,3356.0,258.0
+125.0,Attorney (Intellectual Property),Legal,198697.82,2514.0,76.0
+126.0,Attorney (Real Estate),Legal,100109.71,3000.0,184.0
+127.0,Attorney (Tax Law),Legal,147152.25,2263.0,80.0
+128.0,Attorney (Environmental Law),Legal,88787.38,2270.0,250.0
+129.0,Public Defender,Legal,61507.84,2922.0,432.0
+130.0,Prosecutor / District Attorney,Legal,74016.81,2800.0,233.0
+131.0,Judge,Legal,151675.48,1183.0,68.0
+132.0,Paralegal,Legal,57038.07,6721.0,208.0
+133.0,Legal Secretary,Legal,49434.81,5069.0,500.0
+134.0,Compliance Manager,Legal,119962.98,3658.0,416.0
+135.0,Contract Manager,Legal,106464.56,4100.0,155.0
+136.0,Legal Analyst,Legal,75575.23,3279.0,285.0
+137.0,Patent Agent,Legal,113659.21,2038.0,79.0
+138.0,Arbitrator / Mediator,Legal,97285.07,1666.0,140.0
+139.0,Title Examiner,Legal,63761.14,2864.0,290.0
+140.0,Court Reporter,Legal,66478.88,1889.0,86.0
+141.0,Elementary School Teacher,Education,49223.38,29958.0,2728.0
+142.0,Middle School Teacher,Education,54567.4,16084.0,2165.0
+143.0,High School Teacher,Education,55095.98,22106.0,1324.0
+144.0,Special Education Teacher,Education,62102.94,12104.0,1781.0
+145.0,School Counselor,Education,62675.47,8810.0,791.0
+146.0,School Psychologist,Education,83291.33,4707.0,288.0
+147.0,Principal,Education,101103.92,4074.0,369.0
+148.0,University Professor,Education,115066.78,8552.0,1009.0
+149.0,College Lecturer,Education,67274.72,6147.0,432.0
+150.0,Academic Advisor,Education,52273.71,7515.0,561.0
+151.0,Curriculum Developer,Education,74640.41,3743.0,779.0
+152.0,Instructional Designer,Education,83817.53,5268.0,626.0
+153.0,ESL Teacher,Education,49850.55,9066.0,769.0
+154.0,Librarian,Education,60450.68,4626.0,409.0
+155.0,Education Administrator,Education,82102.32,5206.0,248.0
+156.0,Tutoring Center Director,Education,66014.44,3824.0,190.0
+157.0,Corporate Trainer,Education,74653.48,5867.0,329.0
+158.0,E-Learning Developer,Education,86523.39,3916.0,394.0
+159.0,Museum Educator,Education,48375.27,3618.0,257.0
+160.0,Early Childhood Educator,Education,40115.15,15572.0,747.0
+161.0,Marketing Manager,Marketing,114831.59,8974.0,316.0
+162.0,Digital Marketing Specialist,Marketing,78800.17,12337.0,1443.0
+163.0,SEO Specialist,Marketing,71965.44,8894.0,412.0
+164.0,Content Marketing Manager,Marketing,82661.78,8252.0,1031.0
+165.0,Social Media Manager,Marketing,64790.99,15110.0,1186.0
+166.0,Brand Manager,Marketing,103745.64,6767.0,294.0
+167.0,Advertising Manager,Marketing,108782.01,5650.0,304.0
+168.0,Market Research Analyst,Marketing,70048.29,5957.0,717.0
+169.0,Public Relations Specialist,Marketing,65187.72,6393.0,239.0
+170.0,Communications Director,Marketing,125975.74,4318.0,153.0
+171.0,Copywriter,Marketing,67627.51,9850.0,1223.0
+172.0,Content Strategist,Marketing,81198.38,7494.0,514.0
+173.0,Growth Hacker,Marketing,91856.72,5251.0,643.0
+174.0,Email Marketing Specialist,Marketing,64775.55,7681.0,826.0
+175.0,Influencer Marketing Manager,Marketing,75511.09,5829.0,577.0
+176.0,Event Planner,Marketing,53577.94,8598.0,401.0
+177.0,Media Buyer,Marketing,71025.87,4405.0,203.0
+178.0,Product Marketing Manager,Marketing,120676.87,8204.0,753.0
+179.0,Creative Director,Marketing,154924.17,4209.0,229.0
+180.0,Graphic Designer,Marketing,61648.01,9610.0,716.0
+181.0,Video Producer,Marketing,74769.89,7816.0,609.0
+182.0,Podcast Producer,Marketing,57084.39,4375.0,320.0
+183.0,Photojournalist,Marketing,47467.78,2820.0,355.0
+184.0,Animator,Marketing,74090.45,5311.0,162.0
+185.0,Motion Graphics Designer,Marketing,76315.24,4714.0,327.0
+186.0,Biologist,Science,83286.58,3872.0,264.0
+187.0,Chemist,Science,78030.46,4576.0,565.0
+188.0,Physicist,Science,102728.86,2568.0,112.0
+189.0,Environmental Scientist,Science,75369.74,5997.0,261.0
+190.0,Geologist,Science,90779.36,4469.0,211.0
+191.0,Astronomer,Science,124447.02,1200.0,81.0
+192.0,Marine Biologist,Science,70340.5,2258.0,110.0
+193.0,Ecologist,Science,71541.38,3685.0,182.0
+194.0,Neuroscientist,Science,95270.52,2586.0,292.0
+195.0,Epidemiologist,Science,89159.17,3167.0,286.0
+196.0,Forensic Scientist,Science,70024.53,4029.0,466.0
+197.0,Microbiologist,Science,84435.2,3924.0,269.0
+198.0,Biochemist,Science,86774.02,4052.0,105.0
+199.0,Agricultural Scientist,Science,70054.23,4152.0,573.0
+200.0,Food Scientist,Science,79693.41,4755.0,457.0
+201.0,Materials Scientist,Science,91338.83,3326.0,391.0
+202.0,Nanotechnologist,Science,102869.02,1802.0,239.0
+203.0,Toxicologist,Science,83614.42,2562.0,293.0
+204.0,Clinical Psychologist,Science,93702.6,5840.0,280.0
+205.0,Research Psychologist,Science,85183.53,3284.0,210.0
+206.0,Sociologist,Science,73371.82,2826.0,132.0
+207.0,Anthropologist,Science,66190.24,2154.0,175.0
+208.0,Archaeologist,Science,65087.94,2427.0,95.0
+209.0,Political Scientist,Science,115103.6,2329.0,170.0
+210.0,Statistician,Science,105483.42,5093.0,603.0
+211.0,Biostatistician,Science,112997.59,3448.0,171.0
+212.0,Computational Biologist,Science,119559.12,2538.0,202.0
+213.0,Pharmacologist,Science,102038.74,2385.0,209.0
+214.0,Immunologist,Science,110049.41,2492.0,155.0
+215.0,Virologist,Science,99402.96,2487.0,256.0
+216.0,Mechanical Engineer,Engineering,105300.5,6325.0,583.0
+217.0,Electrical Engineer,Engineering,102690.85,7370.0,651.0
+218.0,Civil Engineer,Engineering,96004.6,8182.0,827.0
+219.0,Chemical Engineer,Engineering,117856.97,5579.0,302.0
+220.0,Aerospace Engineer,Engineering,122946.79,3829.0,222.0
+221.0,Nuclear Engineer,Engineering,122122.45,1979.0,200.0
+222.0,Industrial Engineer,Engineering,97188.86,5452.0,528.0
+223.0,Structural Engineer,Engineering,104292.04,4359.0,581.0
+224.0,Environmental Engineer,Engineering,91259.24,4551.0,548.0
+225.0,Materials Engineer,Engineering,98211.57,3945.0,91.0
+226.0,Petroleum Engineer,Engineering,146766.21,2681.0,295.0
+227.0,Mining Engineer,Engineering,123798.46,2287.0,161.0
+228.0,Biomedical Engineer (Device),Engineering,108678.67,3319.0,323.0
+229.0,Agricultural Engineer,Engineering,85387.84,2230.0,163.0
+230.0,Marine Engineer,Engineering,112668.56,2145.0,248.0
+231.0,Geotechnical Engineer,Engineering,94235.93,2772.0,99.0
+232.0,Transportation Engineer,Engineering,91262.81,4022.0,186.0
+233.0,Water Resources Engineer,Engineering,92030.14,3315.0,397.0
+234.0,Acoustical Engineer,Engineering,98596.43,1607.0,189.0
+235.0,Optical Engineer,Engineering,110492.47,2386.0,83.0
+236.0,Manufacturing Engineer,Engineering,95989.15,4641.0,235.0
+237.0,Quality Engineer,Engineering,85405.65,5376.0,453.0
+238.0,Process Engineer,Engineering,95576.98,4668.0,171.0
+239.0,Safety Engineer,Engineering,96237.41,3438.0,394.0
+240.0,Packaging Engineer,Engineering,80674.55,3152.0,343.0
+241.0,Architectural Engineer,Engineering,86727.7,2953.0,236.0
+242.0,Management Consultant,Business,153463.15,6975.0,754.0
+243.0,Business Analyst,Business,95607.86,8990.0,866.0
+244.0,Operations Manager,Business,108448.23,9131.0,1200.0
+245.0,Supply Chain Manager,Business,112623.43,6494.0,302.0
+246.0,Logistics Coordinator,Business,63751.64,6725.0,765.0
+247.0,Procurement Manager,Business,109643.18,5430.0,308.0
+248.0,Human Resources Manager,Business,104460.71,7934.0,392.0
+249.0,Recruiter,Business,67212.96,10647.0,909.0
+250.0,Talent Acquisition Specialist,Business,75272.34,9199.0,693.0
+251.0,Training & Development Manager,Business,93685.97,4339.0,218.0
+252.0,Compensation Analyst,Business,81293.41,4553.0,557.0
+253.0,Benefits Administrator,Business,62047.12,4456.0,181.0
+254.0,CEO,Business,399294.98,1127.0,116.0
+255.0,COO,Business,297996.25,1380.0,159.0
+256.0,CMO,Business,262599.13,1549.0,159.0
+257.0,Strategy Consultant,Business,166554.15,4429.0,187.0
+258.0,Change Management Consultant,Business,156609.7,3533.0,227.0
+259.0,Account Manager,Business,75855.56,10687.0,877.0
+260.0,Sales Representative,Business,62965.3,18737.0,2027.0
+261.0,Sales Manager,Business,108538.5,8955.0,974.0
+262.0,Business Development Manager,Business,120827.72,6264.0,516.0
+263.0,Entrepreneur / Startup Founder,Business,70397.51,5576.0,286.0
+264.0,Franchise Owner,Business,84873.51,5016.0,261.0
+265.0,Retail Manager,Business,53062.42,9899.0,1015.0
+266.0,Store Manager,Business,56862.27,8861.0,1034.0
+267.0,E-commerce Manager,Business,84654.95,6921.0,598.0
+268.0,Customer Success Manager,Business,81041.59,6919.0,1189.0
+269.0,Customer Service Representative,Business,44310.54,21906.0,2422.0
+270.0,Office Manager,Business,59357.88,8364.0,280.0
+271.0,Executive Assistant,Business,68451.86,6327.0,762.0
+272.0,Architect,Architecture,90135.56,4077.0,234.0
+273.0,Urban Planner,Architecture,81441.89,3313.0,381.0
+274.0,Landscape Architect,Architecture,76803.44,3230.0,474.0
+275.0,Interior Designer,Architecture,62521.06,5529.0,215.0
+276.0,Industrial Designer,Architecture,73255.41,3940.0,184.0
+277.0,Fashion Designer,Architecture,56261.23,5222.0,166.0
+278.0,Furniture Designer,Architecture,53229.91,2737.0,299.0
+279.0,Jewelry Designer,Architecture,49027.39,2137.0,128.0
+280.0,Textile Designer,Architecture,53055.3,2715.0,201.0
+281.0,Web Designer,Architecture,70575.68,7133.0,719.0
+282.0,3D Modeler,Architecture,62993.81,4562.0,176.0
+283.0,CAD Designer,Architecture,66515.71,4727.0,488.0
+284.0,Environmental Designer,Architecture,68093.13,2536.0,122.0
+285.0,Exhibition Designer,Architecture,60782.08,2222.0,214.0
+286.0,Lighting Designer,Architecture,64233.9,2921.0,330.0
+287.0,Government Policy Analyst,Government,88218.42,5200.0,597.0
+288.0,Intelligence Analyst,Government,91521.75,3907.0,112.0
+289.0,Foreign Service Officer,Government,82218.72,2226.0,158.0
+290.0,Military Officer,Government,94503.19,8549.0,502.0
+291.0,FBI Agent,Government,96486.85,1792.0,57.0
+292.0,CIA Analyst,Government,94540.01,1609.0,174.0
+293.0,TSA Officer,Government,54075.64,6549.0,604.0
+294.0,Customs Officer,Government,63694.63,5331.0,209.0
+295.0,Police Officer,Government,63616.23,11758.0,1416.0
+296.0,Firefighter,Government,59006.29,8753.0,736.0
+297.0,Paramedic / EMT,Government,50809.12,10162.0,909.0
+298.0,Social Worker,Government,53334.44,13221.0,388.0
+299.0,Urban Planner (Government),Government,81662.82,3359.0,121.0
+300.0,Environmental Regulator,Government,74876.79,2745.0,401.0
+301.0,Congressional Staffer,Government,53921.22,4332.0,545.0
+302.0,City Planner,Government,80130.53,2907.0,200.0
+303.0,Public Health Administrator,Government,88180.41,3737.0,444.0
+304.0,State Auditor,Government,76236.85,2379.0,263.0
+305.0,Tax Examiner (IRS),Government,64001.08,3851.0,215.0
+306.0,Immigration Officer,Government,71535.45,3408.0,145.0
+307.0,Journalist,Media,54061.38,4448.0,610.0
+308.0,News Anchor,Media,67423.2,2385.0,1182.0
+309.0,Radio Host,Media,53556.56,1809.0,552.0
+310.0,Film Director,Media,93773.86,2094.0,964.0
+311.0,Screenwriter,Media,78039.96,2747.0,864.0
+312.0,Film Editor,Media,72224.38,2822.0,810.0
+313.0,Camera Operator,Media,59382.83,4118.0,530.0
+314.0,Sound Engineer,Media,62395.15,3115.0,488.0
+315.0,Music Producer,Media,86031.64,3103.0,1292.0
+316.0,Actor,Media,47575.87,3438.0,1183.0
+317.0,Voice Actor,Media,55035.4,2645.0,370.0
+318.0,Stunt Coordinator,Media,73117.63,1284.0,359.0
+319.0,Game Designer,Media,88318.19,4079.0,700.0
+320.0,Esports Manager,Media,72698.32,2001.0,952.0
+321.0,Sports Analyst,Media,72305.15,2801.0,1587.0
+322.0,Sports Broadcaster,Media,74061.94,1552.0,654.0
+323.0,Sportswriter,Media,53726.42,2285.0,708.0
+324.0,Book Editor,Media,61038.65,2252.0,701.0
+325.0,Literary Agent,Media,63476.07,2458.0,223.0
+326.0,Publishing Manager,Media,73424.08,2227.0,1261.0
+327.0,YouTube Content Creator,Media,57073.7,2959.0,561.0
+328.0,Podcast Host,Media,48617.59,3162.0,1120.0
+329.0,Streaming Personality,Media,55364.42,2425.0,1220.0
+330.0,Social Media Influencer,Media,63411.92,3355.0,1111.0
+331.0,Photographer,Media,49016.7,3538.0,1319.0
+332.0,Videographer,Media,56030.79,4252.0,455.0
+333.0,Nonprofit Program Manager,Nonprofit,62241.92,5183.0,774.0
+334.0,Grant Writer,Nonprofit,60779.71,3831.0,214.0
+335.0,Development Director,Nonprofit,89634.3,3162.0,428.0
+336.0,Volunteer Coordinator,Nonprofit,46837.04,3854.0,741.0
+337.0,Community Organizer,Nonprofit,48388.34,4502.0,386.0
+338.0,Advocacy Manager,Nonprofit,64599.75,2992.0,549.0
+339.0,International Aid Worker,Nonprofit,55578.23,2414.0,313.0
+340.0,Environmental Activist,Nonprofit,47895.39,2328.0,214.0
+341.0,Fundraising Manager,Nonprofit,74376.72,3246.0,567.0
+342.0,NGO Director,Nonprofit,96498.73,2219.0,125.0
+343.0,Social Entrepreneur,Nonprofit,63075.77,2621.0,99.0
+344.0,Corporate Social Responsibility Manager,Nonprofit,80925.18,2888.0,181.0
+345.0,Foundation Program Officer,Nonprofit,80844.41,2392.0,173.0
+346.0,Policy Advocate,Nonprofit,64694.77,3002.0,349.0
+347.0,Human Rights Lawyer,Nonprofit,68538.57,1791.0,294.0
+348.0,Real Estate Agent,Real Estate,73533.36,20274.0,1639.0
+349.0,Real Estate Broker,Real Estate,98392.12,9234.0,819.0
+350.0,Property Manager,Real Estate,62550.75,8409.0,1118.0
+351.0,Real Estate Developer,Real Estate,150106.36,4196.0,622.0
+352.0,Commercial Real Estate Analyst,Real Estate,97934.81,3651.0,263.0
+353.0,Appraiser,Real Estate,78686.14,3682.0,724.0
+354.0,Mortgage Loan Officer,Real Estate,87910.77,5740.0,242.0
+355.0,Title Officer,Real Estate,64973.91,5089.0,957.0
+356.0,Real Estate Attorney,Real Estate,116966.11,2722.0,115.0
+357.0,Home Inspector,Real Estate,61999.6,5066.0,1005.0
+358.0,Leasing Consultant,Real Estate,47113.81,6581.0,409.0
+359.0,HOA Manager,Real Estate,59488.55,4383.0,226.0
+360.0,Construction Manager,Trades,105477.48,6476.0,615.0
+361.0,Project Manager (Construction),Trades,93474.53,5238.0,673.0
+362.0,Electrical Contractor,Trades,83966.01,6238.0,510.0
+363.0,Plumbing Contractor,Trades,81137.81,5058.0,473.0
+364.0,HVAC Technician,Trades,65658.1,7211.0,482.0
+365.0,Welder (Specialized),Trades,72451.26,5266.0,246.0
+366.0,Aircraft Mechanic,Trades,81230.46,4246.0,453.0
+367.0,Marine Technician,Trades,67170.2,2761.0,178.0
+368.0,Wind Turbine Technician,Trades,59335.32,4252.0,250.0
+369.0,Solar Panel Installer (Lead),Trades,57469.25,7725.0,273.0
+370.0,Strategy Analyst,Consulting,111919.05,4237.0,840.0
+371.0,McKinsey Analyst,Consulting,110202.64,1773.0,122.0
+372.0,BCG Analyst,Consulting,103468.88,1559.0,252.0
+373.0,Bain Analyst,Consulting,112492.77,1254.0,142.0
+374.0,IT Consultant,Consulting,122130.76,7440.0,835.0
+375.0,HR Consultant,Consulting,92829.55,4516.0,392.0
+376.0,Financial Consultant,Consulting,103739.7,4125.0,139.0
+377.0,Healthcare Consultant,Consulting,123292.45,3323.0,593.0
+378.0,Operations Consultant,Consulting,108480.3,3429.0,259.0
+379.0,Marketing Consultant,Consulting,91741.5,3588.0,271.0
+380.0,Environmental Consultant,Consulting,92304.53,3263.0,359.0
+381.0,Risk Consultant,Consulting,99527.68,3057.0,374.0
+382.0,Sustainability Consultant,Consulting,92961.39,3399.0,289.0
+383.0,Digital Transformation Consultant,Consulting,137875.35,4943.0,250.0
+384.0,Hotel Manager,Hospitality,63596.04,5651.0,876.0
+385.0,Restaurant Manager,Hospitality,51019.37,7953.0,942.0
+386.0,Chef (Executive),Hospitality,70916.59,5178.0,569.0
+387.0,Sommelier,Hospitality,56572.44,2699.0,191.0
+388.0,Travel Agent,Hospitality,43394.73,3551.0,534.0
+389.0,Tour Guide,Hospitality,37251.31,4379.0,521.0
+390.0,Event Coordinator,Hospitality,48334.89,7960.0,1230.0
+391.0,Wedding Planner,Hospitality,54173.04,4567.0,812.0
+392.0,Cruise Director,Hospitality,58659.45,1769.0,265.0
+393.0,Casino Manager,Hospitality,76658.53,1921.0,196.0
+394.0,Theme Park Manager,Hospitality,68993.5,2676.0,324.0
+395.0,Airline Pilot,Hospitality,184782.48,4338.0,198.0
+396.0,Flight Attendant,Hospitality,56694.79,6954.0,485.0
+397.0,Airport Manager,Hospitality,102105.25,1825.0,228.0
+398.0,Personal Trainer,Sports,47833.63,10740.0,1812.0
+399.0,Athletic Coach,Sports,53081.43,7312.0,1115.0
+400.0,Physical Education Teacher,Sports,54268.06,4277.0,700.0
+401.0,Sports Agent,Sports,87914.33,1904.0,241.0
+402.0,Sports Marketing Manager,Sports,80855.1,2316.0,218.0
+403.0,Athletic Trainer,Sports,54474.75,4529.0,440.0
+404.0,Strength & Conditioning Coach,Sports,53203.77,4312.0,620.0
+405.0,Sports Psychologist,Sports,82224.66,2357.0,348.0
+406.0,Kinesiology Therapist,Sports,61232.27,3209.0,306.0
+407.0,Yoga Instructor,Sports,40440.62,5395.0,413.0
+408.0,Fitness Director,Sports,67564.55,4341.0,544.0
+409.0,Recreation Therapist,Sports,53125.38,4568.0,652.0
+410.0,Sports Nutritionist,Sports,62821.58,3566.0,245.0
+411.0,Sustainability Manager,Environment,94214.55,5501.0,755.0
+412.0,Environmental Consultant,Environment,83543.15,4694.0,488.0
+413.0,Conservation Scientist,Environment,72589.04,3063.0,229.0
+414.0,Wildlife Biologist,Environment,67373.31,2969.0,128.0
+415.0,Park Ranger,Environment,49731.77,4499.0,179.0
+416.0,Climate Scientist,Environment,89936.01,2387.0,77.0
+417.0,Renewable Energy Analyst,Environment,83811.59,4166.0,368.0
+418.0,Carbon Credits Analyst,Environment,80594.97,3278.0,288.0
+419.0,ESG Analyst,Environment,90146.25,5495.0,605.0
+420.0,Water Quality Specialist,Environment,74343.46,3230.0,123.0
+421.0,Recycling Program Manager,Environment,68011.17,2957.0,191.0
+422.0,Green Building Consultant,Environment,80586.66,3822.0,291.0
+423.0,Energy Auditor,Environment,69732.33,4034.0,187.0
+424.0,Ecological Restoration Specialist,Environment,69681.25,2484.0,348.0
+425.0,Librarian (Research),Other,60449.49,2850.0,269.0
+426.0,Archivist,Other,58433.76,2194.0,155.0
+427.0,Museum Curator,Other,61678.89,2226.0,259.0
+428.0,Translator / Interpreter,Other,59021.73,5842.0,252.0
+429.0,Sign Language Interpreter,Other,55000.95,4170.0,492.0
+430.0,Court Interpreter,Other,60791.59,3768.0,417.0
+431.0,Technical Translator,Other,66608.36,4046.0,140.0
+432.0,Philosopher (Academic),Other,74595.28,1162.0,54.0
+433.0,Ethicist,Other,88976.25,1383.0,84.0
+434.0,Think Tank Researcher,Other,77575.52,2177.0,219.0
+435.0,Political Campaign Manager,Other,79037.73,3367.0,239.0
+436.0,Lobbyist,Other,103999.83,2865.0,134.0
+437.0,Speechwriter,Other,81345.67,2344.0,105.0
+438.0,Demographer,Other,88306.32,1795.0,187.0
+439.0,Geographer,Other,75677.38,2471.0,281.0
+440.0,Cartographer,Other,68273.68,1594.0,193.0
+441.0,Meteorologist,Other,94825.09,2572.0,173.0
+442.0,Oceanographer,Other,80434.61,1434.0,170.0
+443.0,Seismologist,Other,82142.7,1087.0,103.0
+444.0,Volcanologist,Other,83955.32,666.0,142.0
+445.0,Paleontologist,Other,64218.46,566.0,89.0
+446.0,Zoologist,Other,69493.58,2225.0,211.0
+447.0,Botanist,Other,66272.2,2312.0,229.0
+448.0,Entomologist,Other,62226.48,1695.0,120.0
+449.0,Ornithologist,Other,67088.24,1590.0,210.0
+450.0,Herpetologist,Other,63250.38,1247.0,100.0
+451.0,Ichthyologist,Other,70993.8,999.0,128.0
+452.0,Primatologist,Other,69052.9,804.0,99.0
+453.0,Ethologist,Other,68599.15,1039.0,104.0
+454.0,Behavioral Economist,Other,102988.99,1955.0,108.0
+455.0,Organizational Psychologist,Other,98257.9,3253.0,180.0
+456.0,Rehabilitation Counselor,Other,53554.18,4994.0,580.0
+457.0,Mental Health Counselor,Other,60613.41,8086.0,1123.0
+458.0,Marriage & Family Therapist,Other,62966.49,6591.0,642.0
+459.0,Addiction Counselor,Other,52289.15,6703.0,508.0
+460.0,Career Counselor,Other,54397.54,4658.0,286.0
+461.0,Life Coach,Other,64673.39,5583.0,170.0
+462.0,Executive Coach,Other,131206.92,4327.0,176.0
+463.0,Nutritionist (Private Practice),Other,67973.16,4439.0,194.0
+464.0,Acupuncturist,Other,74389.78,2669.0,164.0
+465.0,Naturopathic Doctor,Other,81344.49,2127.0,187.0
+466.0,Homeopathic Practitioner,Other,70005.53,1449.0,45.0
+467.0,Massage Therapist,Other,48757.75,7369.0,525.0
+468.0,Esthetician,Other,42331.63,5297.0,435.0
+469.0,Cosmetologist,Other,39092.44,7567.0,934.0
+470.0,Nail Technician,Other,36571.88,5090.0,199.0
+471.0,Hair Stylist,Other,38424.88,9246.0,644.0
+472.0,Tattoo Artist,Other,51014.62,3758.0,428.0
+473.0,Funeral Director,Other,65572.57,3496.0,144.0
+474.0,Embalmer,Other,53556.56,2202.0,111.0
+475.0,Chaplain,Other,54298.95,2928.0,230.0
+476.0,Theologian,Other,65344.51,1682.0,198.0
+477.0,Religious Leader (Minister/Rabbi/Imam),Other,59432.72,3306.0,456.0
+478.0,Philosopher (Independent),Other,46238.38,1186.0,122.0
+479.0,Poet (Published),Other,39889.47,1527.0,177.0
+480.0,Author / Novelist,Other,55707.71,2908.0,514.0
+481.0,Technical Author,Other,78121.92,4956.0,242.0
+482.0,Grant Researcher,Other,68025.43,3079.0,129.0
+483.0,Professional Blogger,Other,48154.34,3993.0,287.0
+484.0,Online Course Creator,Other,64669.83,5552.0,707.0
+485.0,Academic Tutor,Other,44195.33,7006.0,845.0
+486.0,Test Prep Instructor,Other,50591.75,4893.0,731.0
+487.0,Piano / Music Teacher,Other,42673.72,5339.0,621.0
+488.0,Art Teacher,Other,50749.73,4209.0,371.0
+489.0,Dance Instructor,Other,43172.61,4005.0,603.0
+490.0,Drama Teacher,Other,50547.8,3790.0,361.0
+491.0,Culinary Arts Teacher,Other,55379.87,3100.0,108.0
+492.0,Sommelier (Wine Educator),Other,57276.82,2130.0,97.0
+493.0,Barista (Manager),Other,44225.02,4775.0,320.0
+494.0,Brewery Manager,Other,67588.31,2666.0,105.0
+495.0,Winemaker,Other,73099.81,1924.0,133.0
+496.0,Distiller,Other,62494.93,2000.0,169.0
+497.0,Food Critic,Other,58679.64,1187.0,63.0
+498.0,Restaurant Critic,Other,54556.7,889.0,41.0
+499.0,Travel Writer,Other,49923.01,1854.0,183.0
+500.0,Adventure Guide,Other,47874.01,2872.0,114.0
+501.0,Ski Instructor,Other,39337.13,4504.0,516.0
+502.0,Scuba Diving Instructor,Other,42048.93,2543.0,104.0
+503.0,Pilot (Private),Other,89273.2,2213.0,188.0
+504.0,Air Traffic Controller,Other,131330.45,2020.0,241.0
+505.0,Maritime Captain,Other,93308.24,1735.0,49.0
+506.0,Merchant Marine Officer,Other,82267.42,1583.0,123.0
+507.0,Astronaut,Other,145856.33,123.0,10.0
+508.0,Space Mission Analyst,Other,119692.16,886.0,58.0
+509.0,Defense Contractor Analyst,Other,113567.75,3229.0,101.0
+510.0,Weapons Systems Engineer,Other,131143.96,2238.0,126.0
+511.0,Drone Operator (Commercial),Other,75063.28,5375.0,197.0
+512.0,Autonomous Vehicle Engineer,Other,149835.54,3197.0,162.0
+513.0,Battery Technology Engineer,Other,122782.88,3420.0,226.0
+514.0,Hydrogen Energy Specialist,Other,117160.91,2293.0,180.0
+515.0,Nuclear Reactor Operator,Other,100403.1,1782.0,211.0
+516.0,Power Plant Engineer,Other,97276.75,2847.0,457.0
+517.0,Utilities Manager,Other,95101.85,3089.0,181.0
+518.0,Water Treatment Specialist,Other,74850.66,4316.0,130.0
+519.0,Waste Management Engineer,Other,82556.07,3353.0,108.0
+520.0,Recycling Engineer,Other,77083.77,2816.0,277.0
+521.0,Circular Economy Consultant,Other,92613.36,2639.0,314.0
+522.0,Impact Investor,Other,153157.88,1725.0,127.0
+523.0,Microfinance Specialist,Other,72464.32,2073.0,180.0
+524.0,Economic Development Officer,Other,79535.43,3820.0,365.0
+525.0,Community Development Banker,Other,74773.45,2289.0,254.0
+526.0,Financial Inclusion Specialist,Other,68286.75,2342.0,273.0
+527.0,Regulatory Affairs Specialist,Other,90781.74,4005.0,664.0
+528.0,Clinical Trial Manager,Other,106202.06,3967.0,189.0
+529.0,Drug Safety Officer,Other,96252.85,3229.0,102.0
+530.0,Medical Affairs Manager,Other,123235.44,3020.0,143.0
+531.0,Pharmaceutical Sales Rep,Other,78838.18,8389.0,266.0
+532.0,Medical Device Sales,Other,93200.15,6139.0,519.0
+533.0,Health Informatics Specialist,Other,89624.8,3614.0,287.0
+534.0,Medical Imaging Specialist,Other,81380.12,3231.0,236.0
+535.0,Orthopedic Technician,Other,58133.24,4645.0,329.0
+536.0,Perfusionist,Other,131672.54,1287.0,149.0
+537.0,Electrophysiology Technician,Other,72406.12,2545.0,127.0
+538.0,Echocardiography Technician,Other,79414.27,2775.0,354.0
+539.0,Phlebotomist (Supervisor),Other,54386.85,5080.0,699.0
+540.0,Pathologist Assistant,Other,96391.83,2378.0,120.0
+541.0,Cytotechnologist,Other,75747.46,2579.0,287.0
+542.0,Histotechnician,Other,62130.26,2857.0,323.0
+543.0,Audiologist,Other,87791.99,3564.0,176.0
+544.0,Prosthetist / Orthotist,Other,91974.31,2464.0,93.0
+545.0,Art Therapist,Other,56692.41,3247.0,334.0
+546.0,Music Therapist,Other,54358.34,3802.0,282.0
+547.0,Equine Therapist,Other,49830.36,2506.0,324.0
+548.0,Horticultural Therapist,Other,48207.79,1708.0,148.0
+549.0,Drama Therapist,Other,52396.05,2131.0,136.0
+550.0,Aquatic Therapist,Other,59797.38,2651.0,117.0
+551.0,Telehealth Coordinator,Other,67833.0,5989.0,533.0
+552.0,Remote Patient Monitor,Other,57593.97,4471.0,417.0
+553.0,Health Coach,Other,61786.98,6385.0,225.0
+554.0,Geriatric Care Manager,Other,64593.81,4045.0,515.0
+555.0,Palliative Care Specialist,Other,86646.93,2859.0,399.0
+556.0,Hospice Worker,Other,59014.6,4494.0,510.0
+557.0,Doula,Other,48644.91,3105.0,135.0
+558.0,Midwife,Other,117998.32,2056.0,334.0
+559.0,Lactation Consultant,Other,67652.45,2498.0,379.0
+560.0,Genetic Engineer,Other,118570.86,2127.0,167.0
+561.0,CRISPR Researcher,Other,110576.81,1922.0,176.0
+562.0,Synthetic Biologist,Other,117094.39,1642.0,110.0
+563.0,Bioinformatics Scientist,Other,112858.62,2727.0,248.0
+564.0,Computational Chemist,Other,107026.4,2097.0,178.0
+565.0,Crystallographer,Other,94681.36,1209.0,153.0
+566.0,Spectroscopist,Other,92412.62,1250.0,160.0
+567.0,Mass Spectrometry Analyst,Other,90854.2,1796.0,79.0
+568.0,Chromatography Specialist,Other,87503.35,2108.0,255.0
+569.0,Lab Manager,Other,76801.06,4386.0,282.0
+570.0,Research Associate,Other,54459.3,7481.0,1140.0
+571.0,Postdoctoral Researcher,Other,66142.73,5151.0,655.0
+572.0,Clinical Lab Scientist,Other,71793.2,5399.0,301.0
+573.0,Patent Examiner,Other,94778.76,2378.0,278.0
+574.0,Technology Transfer Officer,Other,88630.59,2400.0,291.0
+575.0,Research Commercialization Manager,Other,91808.02,1929.0,146.0
+576.0,SBIR Grant Manager,Other,82284.05,1897.0,136.0
+577.0,University Research Administrator,Other,79382.2,3242.0,261.0
+578.0,Academic Department Chair,Other,118264.4,2149.0,148.0
+579.0,Dean of Students,Other,99892.34,2586.0,162.0
+580.0,Admissions Counselor,Other,49719.89,5910.0,538.0
+581.0,Financial Aid Officer,Other,54408.23,5427.0,361.0
+582.0,Registrar,Other,64667.45,3083.0,421.0
+583.0,Housing Director,Other,68742.87,3021.0,283.0
+584.0,Student Affairs Director,Other,88138.83,2335.0,116.0
+585.0,Career Services Director,Other,81201.95,3271.0,525.0
+586.0,Diversity & Inclusion Officer,Other,93247.66,4295.0,312.0
+587.0,Title IX Coordinator,Other,75454.07,3438.0,278.0
+588.0,Ombudsman,Other,69901.0,2144.0,242.0
+589.0,Accreditation Specialist,Other,73420.52,2081.0,166.0
+590.0,Institutional Research Analyst,Other,75002.7,3401.0,122.0
+591.0,Assessment Coordinator,Other,62977.18,3438.0,421.0
+592.0,Online Education Director,Other,91802.08,3201.0,143.0
+593.0,Learning Management System Admin,Other,69036.27,4430.0,244.0
+594.0,Accessibility Coordinator,Other,61296.41,3589.0,298.0
+595.0,International Student Advisor,Other,56324.19,3829.0,296.0
+596.0,Study Abroad Coordinator,Other,52823.67,3882.0,438.0
+597.0,Alumni Relations Manager,Other,63189.8,2838.0,295.0
+598.0,University Fundraiser,Other,72085.41,3344.0,179.0
+599.0,API Developer,Technology,160151.78,7346.0,996.0
+600.0,GraphQL Developer,Technology,158092.1,6463.0,488.0
+601.0,React Developer,Technology,149244.01,11939.0,576.0
+602.0,Angular Developer,Technology,144172.0,7831.0,442.0
+603.0,Vue.js Developer,Technology,143951.07,7699.0,1579.0
+604.0,Node.js Developer,Technology,153206.58,10095.0,1057.0
+605.0,Python Developer,Technology,144692.27,11901.0,999.0
+606.0,Java Developer,Technology,151812.08,9203.0,1546.0
+607.0,C++ Developer,Technology,150729.97,6534.0,477.0
+608.0,Rust Developer,Technology,164419.63,4981.0,410.0
+609.0,Go Developer,Technology,160421.42,6510.0,688.0
+610.0,Swift Developer,Technology,154204.35,7749.0,922.0
+611.0,Kotlin Developer,Technology,149666.87,6588.0,768.0
+612.0,PHP Developer,Technology,115301.97,9630.0,420.0
+613.0,Ruby on Rails Developer,Technology,142829.76,7202.0,1059.0
+614.0,Scala Developer,Technology,157797.52,4348.0,420.0
+615.0,R Programmer,Technology,119552.0,4364.0,670.0
+616.0,MATLAB Engineer,Technology,111578.14,3483.0,370.0
+617.0,SAS Programmer,Technology,111464.11,3395.0,254.0
+618.0,Tableau Developer,Technology,107038.28,5742.0,827.0
+619.0,Power BI Developer,Technology,96920.41,5812.0,607.0
+620.0,Looker Developer,Technology,112364.48,3686.0,274.0
+621.0,Snowflake Engineer,Technology,159429.59,5096.0,1191.0
+622.0,Spark Engineer,Technology,163186.67,4720.0,520.0
+623.0,Kafka Engineer,Technology,171546.57,3510.0,405.0
+624.0,Kubernetes Engineer,Technology,176896.52,5288.0,598.0
+625.0,Docker Specialist,Technology,157802.27,5755.0,573.0
+626.0,Terraform Engineer,Technology,166100.4,5407.0,185.0
+627.0,Ansible Engineer,Technology,140931.62,4090.0,266.0
+628.0,Jenkins Engineer,Technology,139959.98,3635.0,138.0
+629.0,GitHub Actions Specialist,Technology,143211.05,4434.0,1203.0
+630.0,CI/CD Engineer,Technology,150204.95,4169.0,325.0
+631.0,Infrastructure Engineer,Technology,151049.5,6702.0,923.0
+632.0,Storage Engineer,Technology,141903.26,3469.0,416.0
+633.0,Virtualization Engineer,Technology,138150.93,3734.0,321.0
+634.0,Data Warehouse Engineer,Technology,152063.9,4790.0,810.0
+635.0,ETL Developer,Technology,124942.34,5188.0,358.0
+636.0,Information Architect,Technology,122110.57,3840.0,180.0
+637.0,Interaction Designer,Technology,105926.48,5478.0,882.0
+638.0,Service Designer,Technology,116490.98,4111.0,176.0
+639.0,Design System Manager,Technology,123927.94,3376.0,622.0
+640.0,Accessibility Engineer,Technology,124430.39,3548.0,437.0
+641.0,Localization Engineer,Technology,105365.83,2946.0,584.0
+642.0,Release Manager,Technology,135371.42,3736.0,497.0
+643.0,Configuration Manager,Technology,116052.67,3869.0,253.0
+644.0,IT Risk Manager,Technology,127835.87,3306.0,157.0
+645.0,SOC Analyst,Technology,90933.78,7207.0,263.0
+646.0,Threat Intelligence Analyst,Technology,108618.09,5128.0,381.0
+647.0,Incident Response Specialist,Technology,119448.66,3474.0,1027.0
+648.0,Digital Forensics Analyst,Technology,102703.92,3215.0,160.0
+649.0,Malware Analyst,Technology,114608.28,3002.0,201.0
+650.0,Bug Bounty Hunter,Technology,96852.7,2424.0,107.0
+651.0,Reverse Engineer,Technology,128615.09,2514.0,162.0
+652.0,Cryptographer,Technology,154019.05,1794.0,70.0
+653.0,PKI Engineer,Technology,126222.81,2986.0,192.0
+654.0,Identity & Access Manager,Technology,120334.77,4694.0,517.0
+655.0,Zero Trust Architect,Technology,162035.67,3464.0,158.0
+656.0,SIEM Engineer,Technology,118539.97,3966.0,501.0
+657.0,Endpoint Security Analyst,Technology,95371.49,5775.0,229.0
+658.0,Application Security Engineer,Technology,141312.91,5274.0,376.0
+659.0,Augmented Reality Designer,Technology,122108.19,3389.0,243.0
+660.0,Digital Twin Engineer,Technology,140463.62,2616.0,170.0
+661.0,Edge Computing Specialist,Technology,145913.35,2297.0,450.0
+662.0,IoT Engineer,Technology,135339.35,4901.0,419.0
+663.0,5G Network Engineer,Technology,150659.89,3956.0,305.0
+664.0,Satellite Communications Engineer,Technology,143758.64,2074.0,305.0
+665.0,Chip Design Engineer,Technology,146091.52,3166.0,97.0
+666.0,FPGA Engineer,Technology,137785.08,2283.0,407.0
+667.0,Semiconductor Process Engineer,Technology,138409.87,2167.0,442.0
+668.0,Photonics Engineer,Technology,133202.46,1621.0,232.0
+669.0,Quantum Software Engineer,Technology,172158.3,829.0,53.0
+670.0,Structured Finance Analyst,Finance,128769.5,3410.0,348.0
+671.0,Derivatives Trader,Finance,203684.3,2777.0,154.0
+672.0,Fixed Income Analyst,Finance,115280.59,2795.0,242.0
+673.0,Commodities Trader,Finance,155311.4,2110.0,212.0
+674.0,Foreign Exchange Analyst,Finance,99866.21,3113.0,287.0
+675.0,ESG Investment Analyst,Finance,105471.54,4869.0,321.0
+676.0,Impact Investment Manager,Finance,111797.89,2710.0,266.0
+677.0,Sustainable Finance Analyst,Finance,99292.49,4160.0,614.0
+678.0,Fintech Product Manager,Finance,154927.74,4832.0,876.0
+679.0,Cryptocurrency Analyst,Finance,101479.27,4618.0,797.0
+680.0,DeFi Analyst,Finance,110120.68,3589.0,874.0
+681.0,RegTech Specialist,Finance,102302.43,3635.0,312.0
+682.0,Robo-Advisor Developer,Finance,115108.35,2568.0,427.0
+683.0,Payment Systems Analyst,Finance,90451.52,4612.0,426.0
+684.0,Anti-Money Laundering Analyst,Finance,83713.01,4320.0,227.0
+685.0,KYC Analyst,Finance,74986.07,5773.0,547.0
+686.0,Financial Crime Investigator,Finance,96644.83,3217.0,412.0
+687.0,Retirement Plan Advisor,Finance,92392.43,5654.0,287.0
+688.0,Insurance Actuary,Finance,128764.75,3145.0,319.0
+689.0,Catastrophe Modeler,Finance,120470.18,2042.0,204.0
+690.0,Reinsurance Analyst,Finance,105405.03,2592.0,498.0
+691.0,Pension Fund Manager,Finance,157394.85,2382.0,243.0
+692.0,Endowment Manager,Finance,153420.39,1500.0,141.0
+693.0,Family Office Advisor,Finance,162554.75,2068.0,181.0
+694.0,Sovereign Wealth Fund Analyst,Finance,140761.76,1264.0,94.0
+695.0,Telemedicine Physician,Healthcare,266910.93,5157.0,365.0
+696.0,Concierge Medicine Physician,Healthcare,288606.51,2985.0,318.0
+697.0,Hospital Administrator,Healthcare,128085.32,5536.0,424.0
+698.0,Chief Medical Officer,Healthcare,409791.77,921.0,41.0
+699.0,Chief Nursing Officer,Healthcare,203219.86,1696.0,68.0
+700.0,Health IT Specialist,Healthcare,94512.69,8571.0,380.0
+701.0,Medical Scribe,Healthcare,40589.1,11419.0,745.0
+702.0,Patient Care Coordinator,Healthcare,55429.75,12658.0,1092.0
+703.0,Case Manager (Healthcare),Healthcare,64984.6,8898.0,365.0
+704.0,Utilization Review Specialist,Healthcare,77840.41,7774.0,580.0
+705.0,Prior Authorization Specialist,Healthcare,57887.36,8843.0,518.0
+706.0,Clinical Documentation Specialist,Healthcare,68831.96,6415.0,216.0
+707.0,Infection Prevention Specialist,Healthcare,83231.94,6122.0,549.0
+708.0,Quality Improvement Specialist,Healthcare,86613.67,5315.0,408.0
+709.0,Patient Safety Officer,Healthcare,94812.02,5159.0,260.0
+710.0,Clinical Ethicist,Healthcare,99075.12,2062.0,95.0
+711.0,Health Economist,Healthcare,107014.53,3394.0,330.0
+712.0,Pharmacy Technician (Lead),Healthcare,50576.31,7551.0,245.0
+713.0,Nuclear Medicine Technologist,Healthcare,82678.41,3203.0,167.0
+714.0,MRI Technologist,Healthcare,78310.79,6368.0,662.0
+715.0,CT Technologist,Healthcare,76948.35,7311.0,261.0
+716.0,Ultrasound Technologist,Healthcare,82929.04,7155.0,471.0
+717.0,Cardiovascular Technologist,Healthcare,72186.37,4774.0,455.0
+718.0,Polysomnographic Technician,Healthcare,59885.28,4479.0,391.0
+719.0,Dialysis Technician,Healthcare,54724.19,6456.0,540.0
+720.0,Surgical Technician,Healthcare,58145.12,6818.0,408.0
+721.0,Sterile Processing Technician,Healthcare,49912.32,7687.0,794.0
+722.0,Dental Assistant (Lead),Healthcare,44122.87,9409.0,384.0
+723.0,Orthodontist,Healthcare,281714.76,2581.0,191.0
+724.0,Endodontist,Healthcare,312579.15,1445.0,104.0
+725.0,Periodontist,Healthcare,316084.42,1327.0,84.0
+726.0,Oral Surgeon,Healthcare,403350.2,1138.0,78.0
+727.0,Prosthodontist,Healthcare,287904.51,1217.0,49.0
+728.0,Pediatric Dentist,Healthcare,262303.36,1822.0,155.0
+729.0,Chief of Staff,Business,178000.01,3623.0,421.0
+730.0,Chief People Officer,Business,248377.33,1123.0,135.0
+731.0,Chief Revenue Officer,Business,299552.3,883.0,123.0
+732.0,Chief Technology Officer,Business,332765.02,724.0,63.0
+733.0,General Manager,Business,130734.16,5377.0,465.0
+734.0,Regional Manager,Business,115809.17,6657.0,821.0
+735.0,District Manager,Business,99062.05,6770.0,428.0
+736.0,Category Manager,Business,92911.51,5563.0,439.0
+737.0,Channel Manager,Business,97332.58,5286.0,576.0
+738.0,Partnership Manager,Business,97987.07,6165.0,424.0
+739.0,Alliance Manager,Business,105881.34,4884.0,137.0
+740.0,Vendor Manager,Business,92917.44,4776.0,563.0
+741.0,Contract Negotiator,Business,106807.85,4457.0,262.0
+742.0,Pricing Analyst,Business,86633.86,5684.0,499.0
+743.0,Revenue Operations Manager,Business,111656.54,4149.0,268.0
+744.0,Sales Operations Analyst,Business,76969.73,5297.0,585.0
+745.0,Inside Sales Representative,Business,57428.86,12756.0,1562.0
+746.0,Enterprise Account Executive,Business,157340.21,7885.0,391.0
+747.0,SMB Account Executive,Business,86701.57,10224.0,1452.0
+748.0,Sales Development Representative,Business,57737.69,13882.0,786.0
+749.0,Business Development Representative,Business,61696.71,12741.0,779.0
+750.0,Customer Experience Manager,Business,84491.03,6224.0,272.0
+751.0,Community Manager,Business,65220.98,6544.0,565.0
+752.0,User Research Manager,Business,111863.22,4556.0,152.0
+753.0,Performance Marketing Manager,Marketing,98303.03,7831.0,575.0
+754.0,Paid Search Specialist,Marketing,75226.01,6107.0,680.0
+755.0,Paid Social Specialist,Marketing,68852.15,6684.0,1185.0
+756.0,Affiliate Marketing Manager,Marketing,82482.42,4831.0,290.0
+757.0,Conversion Rate Optimizer,Marketing,85764.38,4983.0,600.0
+758.0,Marketing Analytics Manager,Marketing,101182.32,5511.0,568.0
+759.0,CRM Manager,Marketing,93355.75,7103.0,390.0
+760.0,Loyalty Program Manager,Marketing,84645.45,4957.0,865.0
+761.0,Trade Marketing Manager,Marketing,80976.26,4844.0,437.0
+762.0,Shopper Marketing Manager,Marketing,82876.78,3510.0,393.0
+763.0,Retail Marketing Manager,Marketing,79219.47,5096.0,342.0
+764.0,Field Marketing Manager,Marketing,87508.1,5498.0,437.0
+765.0,Account Director (Advertising),Marketing,113732.85,4972.0,475.0
+766.0,Media Planner,Marketing,68178.66,5719.0,698.0
+767.0,Account Planner,Marketing,75362.61,4804.0,327.0
+768.0,Brand Strategist,Marketing,91879.29,4299.0,169.0
+769.0,Consumer Insights Manager,Marketing,100072.89,4569.0,150.0
+770.0,Packaging Designer,Marketing,67331.74,4602.0,245.0
+771.0,Retail Designer,Marketing,64786.24,3697.0,239.0
+772.0,Experiential Marketing Manager,Marketing,86439.06,5179.0,470.0
+773.0,Online Course Developer,Education,74870.85,4593.0,611.0
+774.0,Educational Technology Specialist,Education,71960.69,5004.0,306.0
+775.0,Learning Experience Designer,Education,82217.54,4421.0,377.0
+776.0,Corporate Learning Manager,Education,92704.82,4605.0,474.0
+777.0,Academic Coach,Education,49344.54,5481.0,869.0
+778.0,Reading Specialist,Education,57793.52,5407.0,409.0
+779.0,Math Interventionist,Education,58016.83,4828.0,321.0
+780.0,STEM Coordinator,Education,66107.09,3874.0,614.0
+781.0,Gifted Education Teacher,Education,59340.07,4540.0,698.0
+782.0,Bilingual Education Teacher,Education,56900.28,6327.0,693.0
+783.0,Montessori Teacher,Education,45214.48,5182.0,395.0
+784.0,Waldorf Teacher,Education,47238.53,3501.0,169.0
+785.0,Online Tutor (Platform),Education,49105.79,9340.0,728.0
+786.0,Test Prep Coordinator,Education,59303.25,3945.0,228.0
+787.0,Education Policy Analyst,Education,79605.51,3194.0,177.0
+788.0,School Data Analyst,Education,66761.58,3975.0,284.0
+789.0,Education Researcher,Education,73813.69,3334.0,423.0
+790.0,Textbook Editor,Education,62441.47,2839.0,348.0
+791.0,Educational Publisher,Education,75544.35,2494.0,195.0
+792.0,Simulation Educator,Education,77536.33,3639.0,396.0
+793.0,Budget Analyst (Government),Government,83974.33,4546.0,234.0
+794.0,Legislative Analyst,Government,85351.01,3851.0,187.0
+795.0,Municipal Manager,Government,96427.46,3203.0,209.0
+796.0,County Administrator,Government,94424.79,2779.0,238.0
+797.0,Public Works Director,Government,108026.55,2638.0,298.0
+798.0,Emergency Management Director,Government,101479.27,2893.0,201.0
+799.0,Homeland Security Analyst,Government,96054.48,3451.0,393.0
+800.0,Diplomatic Security Agent,Government,94385.59,2106.0,255.0
+801.0,DEA Agent,Government,92975.65,1892.0,113.0
+802.0,ATF Agent,Government,90098.74,1478.0,146.0
+803.0,Secret Service Agent,Government,100487.44,1247.0,149.0
+804.0,Border Patrol Agent,Government,73476.35,5956.0,399.0
+805.0,Coast Guard Officer,Government,80371.66,3395.0,158.0
+806.0,National Guard Officer,Government,75087.04,4332.0,151.0
+807.0,Public Defender (Federal),Government,75144.05,2648.0,133.0
+808.0,Government Economist,Government,112313.4,2415.0,197.0
+809.0,Diplomatic Translator,Government,69903.38,3359.0,96.0
+810.0,Embassy Officer,Government,84602.68,2143.0,145.0
+811.0,USAID Officer,Government,78298.91,1595.0,170.0
+812.0,Peace Corps Volunteer Leader,Government,33249.54,2287.0,163.0
+813.0,Agile Coach,Consulting,138779.29,5235.0,645.0
+814.0,Lean Six Sigma Consultant,Consulting,116995.8,4635.0,536.0
+815.0,ERP Implementation Consultant,Consulting,137766.07,5064.0,489.0
+816.0,SAP Consultant,Consulting,138127.17,4684.0,334.0
+817.0,Oracle Consultant,Consulting,135489.02,3843.0,404.0
+818.0,Microsoft Dynamics Consultant,Consulting,125644.34,4252.0,556.0
+819.0,Process Improvement Consultant,Consulting,110614.82,4140.0,230.0
+820.0,Turnaround Consultant,Consulting,176107.81,2531.0,193.0
+821.0,M&A Advisor,Consulting,205730.92,2022.0,81.0
+822.0,Due Diligence Analyst,Consulting,123502.7,2726.0,98.0
+823.0,Valuation Analyst,Consulting,105579.64,3249.0,255.0
+824.0,Restructuring Advisor,Consulting,159760.99,2149.0,179.0
+825.0,Supply Chain Consultant,Consulting,124090.67,3787.0,402.0
+826.0,Procurement Consultant,Consulting,112758.84,4066.0,158.0
+827.0,Logistics Consultant,Consulting,102486.55,4581.0,287.0
+828.0,Tax Consultant,Consulting,112419.12,5309.0,816.0
+829.0,Forensic Consultant,Consulting,126168.17,2955.0,200.0
+830.0,Litigation Support Consultant,Consulting,109993.59,2888.0,298.0
+831.0,Astrobiologist,Science,90402.82,740.0,24.0
+832.0,Cosmologist,Science,95194.5,919.0,36.0
+833.0,Particle Physicist,Science,108182.16,1269.0,90.0
+834.0,Theoretical Physicist,Science,99166.58,1234.0,56.0
+835.0,Condensed Matter Physicist,Science,102690.85,1326.0,144.0
+836.0,Plasma Physicist,Science,102482.98,1249.0,65.0
+837.0,Atmospheric Scientist,Science,91370.9,2950.0,282.0
+838.0,Paleoclimatologist,Science,84649.01,772.0,88.0
+839.0,Glaciologist,Science,83041.89,795.0,60.0
+840.0,Hydrologist,Science,88611.59,3406.0,301.0
+841.0,Pedologist (Soil Scientist),Science,74895.8,1991.0,104.0
+842.0,Geochemist,Science,87771.8,2371.0,252.0
+843.0,Geohydrologist,Science,87879.89,2587.0,272.0
+844.0,Volcanologist (Research),Science,79088.81,560.0,83.0
+845.0,Seismologist (Research),Science,85348.64,923.0,51.0
+846.0,Remote Sensing Scientist,Science,91913.73,2901.0,104.0
+847.0,GIS Specialist,Science,76943.6,5597.0,493.0
+848.0,Spatial Analyst,Science,77657.48,5021.0,432.0
+849.0,Bioethicist,Science,91287.75,1631.0,69.0
+850.0,Science Communicator,Science,63192.18,2889.0,305.0
+851.0,Controls Engineer,Engineering,104417.95,4100.0,530.0
+852.0,Systems Engineer,Engineering,117511.32,5399.0,593.0
+853.0,Reliability Engineer,Engineering,105045.12,4398.0,392.0
+854.0,Failure Analysis Engineer,Engineering,106367.16,3898.0,441.0
+855.0,Corrosion Engineer,Engineering,97882.54,2623.0,239.0
+856.0,Thermal Engineer,Engineering,107591.81,3735.0,118.0
+857.0,Fluid Dynamics Engineer,Engineering,109694.25,2505.0,150.0
+858.0,Computational Engineer,Engineering,119786.0,3312.0,218.0
+859.0,Propulsion Engineer,Engineering,134238.24,2209.0,116.0
+860.0,Avionics Engineer,Engineering,128885.91,2638.0,101.0
+861.0,Flight Test Engineer,Engineering,141506.53,1907.0,88.0
+862.0,Spacecraft Systems Engineer,Engineering,143442.68,1762.0,167.0
+863.0,Satellite Engineer,Engineering,144727.9,1381.0,196.0
+864.0,Defense Systems Engineer,Engineering,136991.61,2417.0,183.0
+865.0,Naval Architect,Engineering,112416.75,1297.0,38.0
+866.0,Ocean Engineer,Engineering,105611.71,1954.0,137.0
+867.0,Pipeline Engineer,Engineering,121837.37,2222.0,203.0
+868.0,Refinery Engineer,Engineering,125441.22,2368.0,69.0
+869.0,Reservoir Engineer,Engineering,131151.09,2309.0,280.0
+870.0,Drilling Engineer,Engineering,137901.48,1666.0,104.0
+871.0,Digital Journalist,Media,59399.46,3179.0,1131.0
+872.0,Data Journalist,Media,75132.17,2577.0,912.0
+873.0,Investigative Reporter,Media,64675.77,2719.0,1036.0
+874.0,Foreign Correspondent,Media,75236.7,1524.0,198.0
+875.0,Broadcast Producer,Media,69061.21,2116.0,1210.0
+876.0,News Producer,Media,73597.51,3239.0,1255.0
+877.0,Documentary Filmmaker,Media,65191.28,1927.0,826.0
+878.0,Podcast Network Manager,Media,77740.63,1976.0,588.0
+879.0,Music Video Director,Media,72909.76,2196.0,443.0
+880.0,VFX Artist,Media,81776.85,3521.0,859.0
+881.0,3D Animator,Media,78283.47,3550.0,668.0
+882.0,Storyboard Artist,Media,69118.23,2967.0,607.0
+883.0,Concept Artist,Media,74964.69,3452.0,686.0
+884.0,Colorist (Film),Media,73453.78,2166.0,353.0
+885.0,Foley Artist,Media,51546.76,2050.0,581.0
+886.0,Music Supervisor,Media,81228.08,1530.0,724.0
+887.0,Casting Director,Media,69939.01,1830.0,899.0
+888.0,Talent Agent,Media,83344.78,2478.0,521.0
+889.0,Sports Statistician,Media,72766.03,2765.0,582.0
+890.0,Fantasy Sports Analyst,Media,63667.31,1820.0,435.0
+891.0,Hospitality Consultant,Hospitality,77732.32,3420.0,194.0
+892.0,Revenue Manager (Hotel),Hospitality,90696.22,3017.0,567.0
+893.0,Food & Beverage Director,Hospitality,83775.96,4687.0,534.0
+894.0,Banquet Manager,Hospitality,58463.45,4356.0,392.0
+895.0,Catering Manager,Hospitality,66285.27,5050.0,530.0
+896.0,Spa Director,Hospitality,73955.04,3227.0,375.0
+897.0,Golf Course Manager,Hospitality,67670.27,2538.0,673.0
+898.0,Marina Manager,Hospitality,67269.97,1659.0,111.0
+899.0,Campground Manager,Hospitality,52372.3,2185.0,623.0
+900.0,Eco-Tourism Guide,Hospitality,44034.97,2540.0,520.0
+901.0,Cultural Heritage Manager,Hospitality,56426.34,2341.0,333.0
+902.0,Destination Marketing Manager,Hospitality,72526.09,2304.0,773.0
+903.0,Convention Services Manager,Hospitality,69428.25,3483.0,204.0
+904.0,Airport Lounge Manager,Hospitality,69462.69,2279.0,455.0
+905.0,Airline Operations Analyst,Hospitality,81763.79,3095.0,199.0
+906.0,Circular Economy Specialist,Environment,85252.42,3123.0,220.0
+907.0,Life Cycle Assessment Analyst,Environment,83311.52,3107.0,274.0
+908.0,Carbon Footprint Analyst,Environment,74983.69,3633.0,565.0
+909.0,Biodiversity Analyst,Environment,67243.84,2767.0,120.0
+910.0,Wetlands Specialist,Environment,67563.37,2420.0,208.0
+911.0,Urban Ecologist,Environment,74010.87,2712.0,429.0
+912.0,Restoration Ecologist,Environment,71262.25,2361.0,130.0
+913.0,Marine Conservation Specialist,Environment,69815.48,2082.0,223.0
+914.0,Forest Carbon Analyst,Environment,77492.38,2439.0,150.0
+915.0,Permaculture Designer,Environment,52754.78,2439.0,279.0
+916.0,Sustainable Agriculture Specialist,Environment,64197.08,3696.0,285.0
+917.0,Organic Farming Consultant,Environment,60804.65,2588.0,299.0
+918.0,Clean Tech Analyst,Environment,89532.15,4657.0,155.0
+919.0,Grid Modernization Engineer,Environment,105348.01,3344.0,267.0
+920.0,EV Infrastructure Planner,Environment,93159.76,4279.0,453.0
+921.0,Geothermal Energy Specialist,Environment,97443.05,2239.0,76.0
+922.0,Tidal Energy Engineer,Environment,98470.52,1361.0,80.0
+923.0,Bioenergy Specialist,Environment,88192.29,2304.0,283.0
+924.0,Notary Public (Commercial),Other,55529.53,3611.0,140.0
+925.0,Process Server,Other,45909.35,2393.0,244.0
+926.0,Private Investigator,Other,58705.77,2932.0,209.0
+927.0,Security Consultant,Other,90246.03,4013.0,103.0
+928.0,Background Check Analyst,Other,54743.19,4914.0,423.0
+929.0,Risk Assessment Specialist,Other,86085.09,4436.0,374.0
+930.0,Business Continuity Planner,Other,92322.35,3336.0,531.0
+931.0,Crisis Management Specialist,Other,102572.07,2700.0,420.0
+932.0,Insurance Investigator,Other,74763.95,3513.0,142.0
+933.0,Loss Prevention Manager,Other,69931.88,4415.0,507.0
+934.0,Fraud Examiner,Other,84006.4,3735.0,318.0
+935.0,Certified Ethical Hacker,Other,105149.64,3358.0,115.0
+936.0,Information Security Consultant,Other,117741.75,4110.0,652.0
+937.0,Compliance Auditor,Other,88170.9,4445.0,150.0
+938.0,Internal Auditor,Other,87916.71,4910.0,419.0
+939.0,ISO Certification Specialist,Other,81150.87,3207.0,147.0
+940.0,Quality Management Specialist,Other,79306.18,3752.0,324.0
+941.0,Lean Manufacturing Specialist,Other,85102.76,3932.0,182.0
+942.0,Six Sigma Black Belt,Other,105659.22,3447.0,634.0
+943.0,Kaizen Facilitator,Other,91045.44,3754.0,225.0
+944.0,Ergonomics Specialist,Other,76087.18,3185.0,152.0
+945.0,Industrial Hygienist,Other,84804.61,3178.0,346.0
+946.0,Safety Officer,Other,77332.02,5024.0,166.0
+947.0,OSHA Compliance Manager,Other,84453.02,3778.0,645.0
+948.0,Workers Comp Specialist,Other,69375.98,4203.0,272.0
+949.0,Benefits Consultant,Other,83572.84,5102.0,693.0
+950.0,Employee Relations Specialist,Other,75598.99,5144.0,326.0
+951.0,Workplace Investigator,Other,82094.0,3803.0,365.0
+952.0,HRIS Analyst,Other,84859.25,4628.0,451.0
+953.0,HR Analytics Manager,Other,95445.13,4020.0,310.0
+954.0,Organizational Development Specialist,Other,86663.56,4322.0,695.0
+955.0,Change Management Specialist,Other,101234.58,4598.0,486.0
+956.0,Instructional Technology Specialist,Other,76211.9,4968.0,302.0
+957.0,Knowledge Management Specialist,Other,81235.21,3840.0,259.0
+958.0,Intellectual Property Manager,Other,105694.86,3890.0,415.0
+959.0,Technology Licensing Manager,Other,101601.62,2853.0,171.0
+960.0,Standards Development Engineer,Other,95701.7,2605.0,241.0
+961.0,Calibration Technician,Other,65311.25,3558.0,138.0
+962.0,Metrologist,Other,81245.9,3002.0,185.0
+963.0,NDT Inspector,Other,70747.92,3790.0,444.0
+964.0,Reliability Technician,Other,69353.41,4289.0,230.0
+965.0,Maintenance Engineer,Other,78408.19,6147.0,274.0
+966.0,Plant Manager,Other,123431.43,2942.0,442.0
+967.0,Warehouse Manager,Other,74405.23,6477.0,355.0
+968.0,Distribution Center Manager,Other,79495.05,5373.0,210.0
+969.0,Fleet Manager,Other,77438.92,5027.0,123.0
+970.0,Transportation Planner,Other,88206.54,3753.0,193.0
+971.0,Freight Broker,Other,62927.29,5626.0,242.0
+972.0,Import/Export Specialist,Other,66159.36,3941.0,363.0
+973.0,Trade Compliance Manager,Other,88517.75,4064.0,296.0
+974.0,Tariff Analyst,Other,75383.99,3176.0,511.0
+975.0,Customs Broker,Other,68397.22,3724.0,318.0
+976.0,Supply Chain Analyst,Other,79933.35,6774.0,552.0
+977.0,Demand Planning Analyst,Other,80160.23,5722.0,363.0
+978.0,Inventory Analyst,Other,68597.96,6057.0,736.0
+979.0,Category Analyst,Other,74952.81,5433.0,196.0
+980.0,Merchandising Manager,Other,82021.55,4982.0,346.0
+981.0,Visual Merchandiser,Other,54260.94,5935.0,253.0
+982.0,Buyer (Fashion/Retail),Other,68203.6,6136.0,352.0
+983.0,Fashion Stylist,Other,52339.04,5378.0,314.0
+984.0,Personal Shopper,Other,51568.14,4255.0,449.0
+985.0,Image Consultant,Other,58067.91,3111.0,383.0
+986.0,Color Analyst,Other,51724.94,3095.0,89.0
+987.0,Wardrobe Stylist (Film),Other,62753.87,3123.0,164.0
+988.0,Costume Designer,Other,68628.84,2541.0,310.0
+989.0,Set Designer,Other,77702.62,2216.0,343.0
+990.0,Prop Master,Other,65072.5,2071.0,129.0
+991.0,Scenic Designer,Other,68386.53,2339.0,168.0
+992.0,Lighting Technician (Theater),Other,52052.77,2570.0,170.0
+993.0,Sound Designer (Theater),Other,60014.75,2390.0,125.0
+994.0,Stage Manager,Other,56808.82,2888.0,283.0
+995.0,Theater Director,Other,62159.96,2546.0,292.0
+996.0,Choreographer,Other,55086.47,3062.0,99.0
+997.0,Music Composer,Other,60299.83,3703.0,191.0
+998.0,Conductor,Other,72385.93,1355.0,80.0
+999.0,Instrumentalist (Professional),Other,50626.2,4466.0,384.0
+1000.0,Session Musician,Other,53979.42,3346.0,498.0
+1001.0,Music Teacher (Private),Other,48036.75,5979.0,303.0
+1002.0,Band Director,Other,58652.32,3503.0,167.0
+1003.0,Music Therapist (Pediatric),Other,57586.84,3129.0,124.0
+1004.0,DJ / Electronic Music Producer,Other,55996.35,4028.0,341.0
+1005.0,Sound Healing Practitioner,Other,47116.18,2241.0,250.0
+1006.0,Podcast Editor,Other,49340.97,5858.0,605.0
+1007.0,Video Editor (YouTube),Other,58047.72,5924.0,270.0
+1008.0,Social Video Creator,Other,51501.62,6578.0,465.0
+1009.0,Content Creator (TikTok),Other,47989.23,8415.0,891.0
+1010.0,Newsletter Writer,Other,53209.71,4036.0,339.0
+1011.0,Substack Writer,Other,48039.12,3010.0,413.0
+1012.0,Research Journalist,Other,64360.99,3098.0,153.0
+1013.0,Fact-Checker,Other,53738.29,2913.0,397.0
+1014.0,Copy Editor,Other,59014.6,4028.0,365.0
+1015.0,Proofreader,Other,49053.52,3368.0,135.0
+1016.0,Ghostwriter,Other,64997.67,3456.0,203.0
+1017.0,Speechwriter (Corporate),Other,86102.9,2925.0,333.0
+1018.0,Grant Proposal Writer,Other,69448.44,4865.0,166.0
+1019.0,Technical Proposal Writer,Other,73672.34,4751.0,349.0
+1020.0,Content Moderator,Other,55907.26,8787.0,446.0
+1021.0,Trust & Safety Analyst,Other,70964.1,6678.0,649.0
+1022.0,Policy Researcher,Other,72990.53,3362.0,334.0
+1023.0,Legal Researcher,Other,63401.23,4438.0,251.0
+1024.0,Law Clerk,Other,52410.31,4928.0,519.0
+1025.0,Bar Exam Tutor,Other,57747.2,2869.0,294.0
+1026.0,LSAT Tutor,Other,53495.98,5227.0,150.0
+1027.0,GRE/GMAT Tutor,Other,54613.72,4947.0,569.0
+1028.0,Standardized Test Developer,Other,75095.35,3046.0,130.0
+1029.0,Psychometrician,Other,88637.72,2364.0,146.0
+1030.0,Assessment Designer,Other,74442.05,3398.0,564.0
+1031.0,Curriculum Writer,Other,64688.83,4068.0,253.0
+1032.0,Learning Analytics Specialist,Other,79457.04,3338.0,510.0
+1033.0,Adaptive Learning Designer,Other,85625.4,3213.0,361.0
+1034.0,Virtual Reality Educator,Other,85619.46,2673.0,348.0
+1035.0,Gamification Designer,Other,81257.78,3067.0,189.0
+1036.0,Simulation Trainer,Other,71700.55,3605.0,495.0
+1037.0,Flight Simulator Instructor,Other,86657.62,2288.0,83.0
+1038.0,Military Training Developer,Other,82896.97,2771.0,348.0
+1039.0,Corporate Wellness Coordinator,Other,65592.77,4428.0,544.0
+1040.0,Employee Assistance Program Counselor,Other,69640.87,4811.0,415.0
+1041.0,Workplace Wellness Coach,Other,65990.69,5075.0,518.0
+1042.0,Ergonomics Consultant,Other,75109.6,3154.0,109.0
+1043.0,Mindfulness Instructor (Corporate),Other,61402.13,4745.0,262.0
+1044.0,Financial Wellness Educator,Other,70772.86,3610.0,503.0
+1045.0,Retirement Planning Educator,Other,76507.67,3994.0,192.0
+1046.0,Estate Planning Attorney,Other,118045.84,3016.0,358.0
+1047.0,Trust Officer,Other,94231.18,3322.0,291.0
+1048.0,Elder Law Attorney,Other,99022.85,2826.0,266.0
+1049.0,Special Needs Planner,Other,82540.62,2491.0,260.0
+1050.0,Guardian ad Litem,Other,64542.73,3263.0,131.0
+1051.0,Child Advocate,Other,54608.97,4774.0,129.0
+1052.0,Foster Care Coordinator,Other,50704.6,4260.0,388.0
+1053.0,Adoption Specialist,Other,52938.89,3583.0,377.0
+1054.0,Family Mediator,Other,71935.74,2623.0,335.0
+1055.0,Divorce Financial Analyst,Other,91515.81,2870.0,134.0
+1056.0,Victim Advocate,Other,52602.74,4501.0,671.0
+1057.0,Probation Officer,Other,57637.92,4926.0,435.0
+1058.0,Parole Officer,Other,62572.13,3729.0,475.0
+1059.0,Corrections Officer (Admin),Other,53898.65,5959.0,209.0
+1060.0,Juvenile Justice Counselor,Other,53543.49,4706.0,688.0
+1061.0,Restorative Justice Coordinator,Other,55377.49,3492.0,171.0
+1062.0,Reentry Specialist,Other,49689.01,4244.0,474.0
+1063.0,Street Outreach Worker,Other,43657.24,5097.0,539.0
+1064.0,Housing Case Manager,Other,47300.29,5666.0,168.0
+1065.0,Homeless Services Coordinator,Other,54857.22,4954.0,427.0
+1066.0,Refugee Resettlement Specialist,Other,56364.57,3942.0,417.0
+1067.0,Disability Rights Advocate,Other,56155.51,3233.0,194.0
+1068.0,Veterans Services Coordinator,Other,60955.51,4849.0,516.0
+1069.0,Military Family Support Specialist,Other,57033.32,3372.0,534.0
+1070.0,Trauma-Informed Care Specialist,Other,63999.9,5087.0,587.0
+1071.0,Crisis Hotline Counselor,Other,46325.09,5116.0,782.0
+1072.0,Mobile Crisis Worker,Other,57298.2,5027.0,670.0
+1073.0,Community Health Worker,Other,45564.89,6603.0,418.0
+1074.0,Health Navigator,Other,47710.09,6768.0,522.0
+1075.0,Patient Advocate,Other,60137.1,5389.0,758.0
+1076.0,Bioethics Consultant,Other,96406.08,1614.0,153.0
+1077.0,Organ Procurement Coordinator,Other,76869.96,1884.0,96.0
+1078.0,Clinical Trials Coordinator,Other,68954.31,4550.0,303.0
+1079.0,IRB Specialist,Other,74586.96,3646.0,364.0
+1080.0,Research Compliance Officer,Other,87130.37,3095.0,198.0
+1081.0,Laboratory Safety Officer,Other,80003.43,3574.0,438.0
+1082.0,Biosafety Officer,Other,84356.81,2228.0,78.0
+1083.0,Radiation Safety Officer,Other,92719.08,2181.0,152.0
+1084.0,Environmental Health Specialist,Other,76853.33,3630.0,138.0
+1085.0,Food Safety Inspector,Other,63193.36,5019.0,549.0
+1086.0,Agricultural Inspector,Other,59789.06,3325.0,621.0
+1087.0,Wildlife Inspector (USFWS),Other,60879.49,3024.0,171.0
+1088.0,Invasive Species Coordinator,Other,61925.96,2856.0,233.0
+1089.0,Fisheries Biologist,Other,71230.17,2229.0,358.0
+1090.0,Range Conservationist,Other,65389.65,2407.0,228.0
+1091.0,Soil Conservation Technician,Other,54390.41,3364.0,110.0
+1092.0,Watershed Manager,Other,76707.23,2540.0,436.0
+1093.0,Groundwater Specialist,Other,81397.94,3283.0,340.0
+1094.0,Air Quality Analyst,Other,76215.47,3354.0,238.0
+1095.0,Noise Pollution Specialist,Other,68312.88,2953.0,204.0
+1096.0,Light Pollution Researcher,Other,63574.66,1253.0,155.0
+1097.0,Ecoacoustics Researcher,Other,67449.33,1296.0,143.0
+1098.0,Urban Heat Island Analyst,Other,71622.16,1882.0,164.0
+1099.0,Green Infrastructure Planner,Other,75312.72,3530.0,140.0
+1100.0,Urban Food Systems Planner,Other,71916.74,2423.0,184.0
+1101.0,Transit Planner,Other,83966.01,4064.0,146.0
+1102.0,Bicycle Infrastructure Planner,Other,67243.84,2566.0,243.0
+1103.0,Pedestrian Safety Analyst,Other,68095.51,3070.0,220.0
+1104.0,Autonomous Mobility Planner,Other,92950.7,2211.0,158.0
+1105.0,Smart City Analyst,Other,85137.2,3452.0,102.0
+1106.0,GovTech Specialist,Other,80844.41,3544.0,442.0
+1107.0,Open Data Coordinator,Other,72789.79,2707.0,336.0
+1108.0,Digital Equity Analyst,Other,68353.27,2807.0,307.0
+1109.0,Broadband Policy Specialist,Other,78525.78,2533.0,160.0
+1110.0,Spectrum Analyst,Other,86538.84,2130.0,400.0
+1111.0,Telecommunications Analyst,Other,88485.68,3701.0,309.0
+1112.0,Radio Frequency Engineer,Other,105286.24,3321.0,408.0
+1113.0,Antenna Engineer,Other,109503.02,2517.0,100.0
+1114.0,Signal Processing Engineer,Other,112088.91,2761.0,146.0
+1115.0,Communications Systems Engineer,Other,120748.13,3133.0,284.0
+1116.0,Radar Engineer,Other,123086.96,2158.0,61.0
+1117.0,Sonar Engineer,Other,114907.61,1675.0,93.0
+1118.0,Electronic Warfare Analyst,Other,133879.52,1543.0,195.0
+1119.0,Space Systems Analyst,Other,117944.87,1240.0,119.0
+1120.0,Orbital Mechanics Engineer,Other,134380.78,989.0,69.0
+1121.0,Mission Operations Analyst,Other,118056.53,1051.0,33.0
+1122.0,Ground Systems Engineer,Other,120850.29,1173.0,166.0
+1123.0,Payload Systems Engineer,Other,133207.21,924.0,68.0
+1124.0,Propellant Engineer,Other,131802.01,713.0,40.0
+1125.0,Launch Operations Engineer,Other,141930.58,746.0,61.0
+1126.0,Range Safety Engineer,Other,117519.63,617.0,61.0
+1127.0,Reentry Vehicle Engineer,Other,131546.63,652.0,17.0
